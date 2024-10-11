@@ -4,7 +4,7 @@ import vector from "../../../assets/Vector.png";
 
 const Jobs = () => {
   return (
-    <div>
+    <div className="my-12">
       <div className="mx-auto w-[727px]">
         <div className="flex items-end justify-between">
           <hr
@@ -24,10 +24,12 @@ const Jobs = () => {
         </p>
       </div>
 
+      
+
       <div className="grid grid-cols-4 gap-2">
 
         <div
-          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 7px 29px 0px` }}
+          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
           className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
         >
           <div className="flex items-center justify-between">
@@ -67,7 +69,7 @@ const Jobs = () => {
         </div>
 
         <div
-          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 7px 29px 0px` }}
+          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
           className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
         >
           <div className="flex items-center justify-between">
@@ -107,7 +109,7 @@ const Jobs = () => {
         </div>
 
         <div
-          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 7px 29px 0px` }}
+          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
           className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
         >
           <div className="flex items-center justify-between">
@@ -147,7 +149,7 @@ const Jobs = () => {
         </div>
 
         <div
-          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 7px 29px 0px` }}
+          style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
           className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
         >
           <div className="flex items-center justify-between">
@@ -185,7 +187,7 @@ const Jobs = () => {
             </button>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
