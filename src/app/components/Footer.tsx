@@ -9,26 +9,26 @@ const Footer = () => {
   return (
     <div className="bg-[#184E77] py-10">
       <div className="max-w-[1160px] mx-auto">
-        <div className="grid grid-cols-4 gap-6 text-[#FFFFFF] text-sm font-semibold">
-          <div>
+        <div className="flex justify-between items-center text-[#FFFFFF] text-sm font-semibold">
+          <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
           </div>
-          <div>
+          <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
           </div>
-          <div>
+          <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
           </div>
-          <div className="text-end">
+          <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-w-[1196px] mx-auto mt-10">
-        <div  className="text-xs text-[#FFFFFF] font-bold flex justify-between items-center">
+        <div className="text-xs text-[#FFFFFF] font-bold flex justify-between items-center">
           <h6>Copyright © 2024 Pro Study Mate. All rights reserved.</h6>
           <div className="flex gap-6">
             <a href="https://www.google.com/" target="_blank">
