@@ -1,11 +1,10 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Jobs from "./components/Home/Jobs";
+
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <Footer />
+    <div className="max-w-[1512px] mx-auto">
+      <Jobs/>
     </div>
   );
 }
