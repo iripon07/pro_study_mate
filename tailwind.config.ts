@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#184E77",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        prosto: ["Prosto One", "cursive"],
+        nothing: ["Nothing You Could Do", "cursive"]
       },
     },
   },
