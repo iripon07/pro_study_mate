@@ -12,11 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#184E77",
+        white: "#FFFFFF",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         prosto: ["Prosto One", "cursive"],
-        nothing: ["Nothing You Could Do", "cursive"]
+        nothing: ["Nothing You Could Do", "cursive"],
       },
     },
   },
