@@ -2,15 +2,16 @@ import Image from "next/image";
 import hero from "../../../assets/students-using-e-learning-platform-video-laptop-graduation-cap-online-education-platform-e-learning-platform-online-teaching-concept 1.png";
 import Mentor from "../../../assets/pngwing.com (10) 1.png"
 
+
 const Hero = () => {
   return (
-    <div style={{ border: "1px solid red" }} className="flex justify-between">
+    <div  className="flex justify-between">
       <div
-        style={{ border: "1px solid red" }}
-        className="flex w-full items-center justify-center"
+        
+        className="flex w-full items-end justify-center"
       >
-        <div className="relative">
-          <div style={{ border: "1px solid red" }} className="z-10 w-[541px]">
+        <div style={{border:'1px solid red'}} className="relative">
+          <div  className="z-10 w-[541px] mb-[87px]">
             <h3 className="text-primary font-prosto text-[40px]">
               Find your Mentor
             </h3>
@@ -22,7 +23,6 @@ const Hero = () => {
                 className="w-full rounded-l text-sm text-[#4B51554D] outline-none"
               />
               <button
-                style={{ border: "1px solid #4B515559" }}
                 className="font-poppins h-[43.04px] w-[174.86px] rounded bg-[#1877F2] text-base font-semibold text-white"
               >
                 Search

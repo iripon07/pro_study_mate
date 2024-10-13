@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Exam from "../../../assets/Vector.png"
+import Research from "../../../assets/Vector (2).png"
 
 const StudyChallenge = () => {
   return (
@@ -30,10 +31,14 @@ const StudyChallenge = () => {
             Exam Topic
           </button>
         </div>
-        <div style={{ border: "1px solid green" }}>
-          <Image src={Exam} alt="Image of Exam"></Image>
-          <button className="text-primary font-poppins text-lg font-semibold">
-            Exam Topic
+        <div>
+          <Image src={Research} alt="Image of Exam"></Image>
+          
+          <button
+            style={{ boxShadow: `#00000026 0px 5px 15px 2px` }}
+            className="text-primary font-poppins w-full rounded-lg py-2 text-lg font-semibold"
+          >
+            Research Topic
           </button>
         </div>
         <div style={{ border: "1px solid green" }}>

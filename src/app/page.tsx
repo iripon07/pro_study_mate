@@ -1,3 +1,4 @@
+import Experience from "./components/Home/Experience";
 import Hero from "./components/Home/Hero";
 import Jobs from "./components/Home/Jobs";
 import StudyChallenge from "./components/Home/StudyChallenge";
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="mx-auto max-w-[1512px]">
       <Hero />
       <StudyChallenge />
+      <Experience/>
       <Jobs />
       <Workshop />
     </div>
