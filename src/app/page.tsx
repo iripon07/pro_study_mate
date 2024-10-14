@@ -1,6 +1,7 @@
 import Award from "./components/Home/Award";
 import Courses from "./components/Home/Courses";
 import Experience from "./components/Home/Experience";
+import GetYourWork from "./components/Home/GetYourWork";
 import Hero from "./components/Home/Hero";
 import Jobs from "./components/Home/Jobs";
 import StudyChallenge from "./components/Home/StudyChallenge";
@@ -13,6 +14,7 @@ export default function Home() {
       {/* <StudyChallenge /> */}
       {/* <Experience /> */}
       <Award/>
+      <GetYourWork/>
       <Jobs />
       <Courses />
       <Workshop />
