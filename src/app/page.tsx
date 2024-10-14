@@ -1,3 +1,5 @@
+import Award from "./components/Home/Award";
+import Courses from "./components/Home/Courses";
 import Experience from "./components/Home/Experience";
 import Hero from "./components/Home/Hero";
 import Jobs from "./components/Home/Jobs";
@@ -7,10 +9,12 @@ import Workshop from "./components/Home/Workshop";
 export default function Home() {
   return (
     <div className="mx-auto max-w-[1512px]">
-      <Hero />
-      <StudyChallenge />
-      <Experience/>
+      {/* <Hero /> */}
+      {/* <StudyChallenge /> */}
+      {/* <Experience /> */}
+      <Award/>
       <Jobs />
+      <Courses />
       <Workshop />
     </div>
   );

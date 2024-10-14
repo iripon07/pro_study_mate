@@ -7,9 +7,7 @@ import logo from "../../assets/Pro_Study_Mate-removebg-preview 1.png";
 const Header = () => {
   return (
     <div className="mx-auto max-w-[1512px]">
-      <div
-        className="flex h-[160px] items-center justify-between"
-      >
+      <div className="flex h-[160px] items-center justify-between">
         <Link href="/">
           <Image
             src={logo}
@@ -28,14 +26,14 @@ const Header = () => {
         <div className="space-x-6">
           <Link
             href="/sign"
-            className="rounded bg-[#184E77] px-4 py-2 text-sm font-semibold text-[#FFFFFF]"
+            className="rounded bg-primary px-4 py-2 text-sm font-semibold text-[#FFFFFF]"
           >
             Sign Up
           </Link>
           <Link
             style={{ border: " 2px solid #184E77" }}
             href="/login"
-            className="rounded px-4 py-2 text-sm font-semibold text-[#184E77]"
+            className="rounded px-4 py-2 text-sm font-semibold text-primary transition duration-300 ease-in-out hover:bg-primary hover:text-white"
           >
             Log In
           </Link>

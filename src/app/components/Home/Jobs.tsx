@@ -1,22 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import vector from "../../../assets/Vector.png";
+import vector from "../../../assets/Vector122.png";
 
 const Jobs = () => {
   return (
-    <div className="my-12">
-      <div className="mx-auto w-[727px]">
-        <div className="flex items-end justify-between">
+    <div className="my-12 px-6 md:px-10">
+      <div className="mx-auto mb-[47px] max-w-[310px] font-poppins lg:max-w-[727px]">
+        <div
+          style={{ border: "1px solid green" }}
+          className="flex items-end justify-between"
+        >
           <hr
             style={{ border: "1.25px solid #4B51554D" }}
-            className="w-[139px]"
+            className="hidden w-[139px] lg:block"
           />
-          <h1 className="text-5xl font-semibold text-[#184E77]">
+          <h1 className="text-center text-5xl text-[32px] font-semibold text-primary">
             Recent Jobs!
           </h1>
           <hr
             style={{ border: "1.25px solid #4B51554D" }}
-            className="w-[139px]"
+            className="hidden w-[139px] lg:block"
           />
         </div>
         <p className="mt-1 text-center text-[22px] font-semibold text-[#4B5155BF] lg:mt-4">
@@ -24,170 +27,175 @@ const Jobs = () => {
         </p>
       </div>
 
-      
-
-      <div className="grid grid-cols-4 gap-2">
-
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
         <div
           style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
-          className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
+          className="rounded-xl px-[36px] py-[45px]"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex">
             <Image
+              width={63}
+              height={63}
               src={vector}
               alt="Vector of Job's card"
-              height={63}
-              width={63}
+              className="mr-3"
             ></Image>
-            <div className="ml-6 text-sm">
-              <h5 className="font-semibold text-[#184E77]">
+
+            <div className="w-full text-sm">
+              <h5 className="font-semibold text-primary">
                 Local Economies: A Case Study Approach
               </h5>
               <p className="font-medium text-[#4B5155]">Essay</p>
             </div>
           </div>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <p className="text-[10px] text-[#4B5155]">
             Hiring a writer to create an assignment on &quot;Exploring Local
             Economies through Case Studies,&quot; focusing on research and
             analysis of unique economic strategies
           </p>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <div className="flex justify-center">
             <Link
               href="#"
-              className="text-sm font-medium text-[#184E77] underline"
+              className="font-poppins text-sm font-medium text-primary underline"
             >
               See Details
             </Link>
           </div>
-          <div className="flex justify-center">
-            <button className="rounded bg-[#184E77] px-4 py-2 text-xs font-semibold text-[#FFFFFF]">
+          <div className="mt-2 flex justify-center">
+            <button className="rounded bg-[#184E77] px-7 py-[9px] font-poppins text-xs font-semibold text-[#FFFFFF]">
               Apply Now
             </button>
           </div>
         </div>
-
         <div
           style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
-          className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
+          className="rounded-xl px-[36px] py-[45px]"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex">
             <Image
+              width={63}
+              height={63}
               src={vector}
               alt="Vector of Job's card"
-              height={63}
-              width={63}
+              className="mr-3"
             ></Image>
-            <div className="ml-6 text-sm">
-              <h5 className="font-semibold text-[#184E77]">
+
+            <div className="w-full text-sm">
+              <h5 className="font-semibold text-primary">
                 Local Economies: A Case Study Approach
               </h5>
               <p className="font-medium text-[#4B5155]">Essay</p>
             </div>
           </div>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <p className="text-[10px] text-[#4B5155]">
             Hiring a writer to create an assignment on &quot;Exploring Local
             Economies through Case Studies,&quot; focusing on research and
             analysis of unique economic strategies
           </p>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <div className="flex justify-center">
             <Link
               href="#"
-              className="text-sm font-medium text-[#184E77] underline"
+              className="font-poppins text-sm font-medium text-primary underline"
             >
               See Details
             </Link>
           </div>
-          <div className="flex justify-center">
-            <button className="rounded bg-[#184E77] px-4 py-2 text-xs font-semibold text-[#FFFFFF]">
+          <div className="mt-2 flex justify-center">
+            <button className="rounded bg-[#184E77] px-7 py-[9px] font-poppins text-xs font-semibold text-[#FFFFFF]">
               Apply Now
             </button>
           </div>
         </div>
-
         <div
           style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
-          className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
+          className="rounded-xl px-[36px] py-[45px]"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex">
             <Image
+              width={63}
+              height={63}
               src={vector}
               alt="Vector of Job's card"
-              height={63}
-              width={63}
+              className="mr-3"
             ></Image>
-            <div className="ml-6 text-sm">
-              <h5 className="font-semibold text-[#184E77]">
+
+            <div className="w-full text-sm">
+              <h5 className="font-semibold text-primary">
                 Local Economies: A Case Study Approach
               </h5>
               <p className="font-medium text-[#4B5155]">Essay</p>
             </div>
           </div>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <p className="text-[10px] text-[#4B5155]">
             Hiring a writer to create an assignment on &quot;Exploring Local
             Economies through Case Studies,&quot; focusing on research and
             analysis of unique economic strategies
           </p>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <div className="flex justify-center">
             <Link
               href="#"
-              className="text-sm font-medium text-[#184E77] underline"
+              className="font-poppins text-sm font-medium text-primary underline"
             >
               See Details
             </Link>
           </div>
-          <div className="flex justify-center">
-            <button className="rounded bg-[#184E77] px-4 py-2 text-xs font-semibold text-[#FFFFFF]">
+          <div className="mt-2 flex justify-center">
+            <button className="rounded bg-[#184E77] px-7 py-[9px] font-poppins text-xs font-semibold text-[#FFFFFF]">
               Apply Now
             </button>
           </div>
         </div>
-
         <div
           style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
-          className="h-[353px] w-[337px] rounded-xl px-[36.5px] py-[45px]"
+          className="rounded-xl px-[36px] py-[45px]"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex">
             <Image
+              width={63}
+              height={63}
               src={vector}
               alt="Vector of Job's card"
-              height={63}
-              width={63}
+              className="mr-3"
             ></Image>
-            <div className="ml-6 text-sm">
-              <h5 className="font-semibold text-[#184E77]">
+
+            <div className="w-full text-sm">
+              <h5 className="font-semibold text-primary">
                 Local Economies: A Case Study Approach
               </h5>
               <p className="font-medium text-[#4B5155]">Essay</p>
             </div>
           </div>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <p className="text-[10px] text-[#4B5155]">
             Hiring a writer to create an assignment on &quot;Exploring Local
             Economies through Case Studies,&quot; focusing on research and
             analysis of unique economic strategies
           </p>
-          <hr className="my-4" style={{ border: "1.25px solid #4B51554D" }} />
+          <hr className="my-6" style={{ border: "1.25px solid #4B51554D" }} />
           <div className="flex justify-center">
             <Link
               href="#"
-              className="text-sm font-medium text-[#184E77] underline"
+              className="font-poppins text-sm font-medium text-primary underline"
             >
               See Details
             </Link>
           </div>
-          <div className="flex justify-center">
-            <button className="rounded bg-[#184E77] px-4 py-2 text-xs font-semibold text-[#FFFFFF]">
+          <div className="mt-2 flex justify-center">
+            <button className="rounded bg-[#184E77] px-7 py-[9px] font-poppins text-xs font-semibold text-[#FFFFFF]">
               Apply Now
             </button>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -7,9 +7,16 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className="bg-[#184E77] py-10">
-      <div className="max-w-[1160px] mx-auto">
-        <div className="flex justify-between items-center text-[#FFFFFF] text-sm font-semibold">
+    <div className="bg-primary lg:py-10 py-[58px] px-[53px]">
+      <div className="mx-auto max-w-[1160px] hidden lg:block">
+
+        <div className="flex items-center justify-between text-sm font-semibold text-white">
+          <div className="space-y-4">
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+          </div>
           <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
@@ -36,10 +43,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1196px] mx-auto mt-10">
-        <div className="text-xs text-[#FFFFFF] font-bold flex justify-between items-center">
-          <h6>Copyright © 2024 Pro Study Mate. All rights reserved.</h6>
-          <div className="flex gap-6">
+
+      <div className="mx-auto h-auto mt-10 max-w-[1196px]">
+
+        <div className="flex items-center justify-between lg:flex-row flex-col text-xs font-poppins font-bold text-[#FFFFFF]">
+          <h6 className='lg:order-1 order-2'>Copyright © 2024 Pro Study Mate. All rights reserved.</h6>
+          <div className="flex gap-6 lg:order-2 order-1 lg:mb-0 mb-4">
             <a href="https://www.google.com/" target="_blank">
               <Image
                 src={img1}
@@ -67,7 +76,7 @@ const Footer = () => {
               alt="social icon of Instagram"
             ></Image>
           </div>
-          <h6>Terms of use / Privacy policy</h6>
+          <h6 className='order-3'>Terms of use / Privacy policy</h6>
         </div>
       </div>
     </div>
