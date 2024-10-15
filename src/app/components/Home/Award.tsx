@@ -5,9 +5,12 @@ import Members from "../../../assets/Members.png";
 import Project from "../../../assets/Project.png";
 import Reviews from "../../../assets/Reviews.png";
 import Transaction from "../../../assets/Transaction.png";
-import CountUp from "react-countup";
+import dynamic from "next/dynamic";
 
 const Award = () => {
+
+  const CountUp = dynamic(() => import("react-countup"), { ssr: false });
+
   return (
     <div className="container mx-auto mt-12 px-3">
       <div className="mx-auto grid max-w-[1259px] grid-cols-2 gap-4 font-poppins md:flex md:justify-between">
