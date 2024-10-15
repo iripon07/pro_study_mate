@@ -1,5 +1,5 @@
 import Image from "next/image";
-import people from "../../../assets/business-people-working-together-table 1.png";
+import people from "../../../assets/Business.png";
 
 const Workshop = () => {
   return (
