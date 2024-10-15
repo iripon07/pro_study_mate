@@ -1,9 +1,8 @@
-import React from 'react'
-import img1 from "../../assets/pngwing.com (16) 1.png"
-import img2 from "../../assets/pngwing.com (14) 1.png"
-import img3 from "../../assets/pngwing.com (13) 1.png"
-import img4 from "../../assets/pngwing.com (12) 1.png"
-import Image from 'next/image'
+import Image from "next/image";
+import Facebook from "../../assets/facebook.png";
+import Gmail from "../../assets/gmail.png";
+import Google from "../../assets/google.png";
+import Instagram from "../../assets/instagram.png";
 
 const Footer = () => {
   return (
@@ -45,39 +44,44 @@ const Footer = () => {
           <h6 className="order-2 lg:order-1">
             Copyright © 2024 Pro Study Mate. All rights reserved.
           </h6>
-          <div className="order-1 mb-4 flex gap-6 lg:order-2 lg:mb-0">
+
+          <div
+            className="order-1 mb-4 flex gap-6 lg:order-2 lg:mb-0"
+          >
             <a href="https://www.google.com/" target="_blank">
               <Image
-                src={img1}
+                src={Google}
                 width={36}
                 height={36}
                 alt="social icon of Google"
               ></Image>
             </a>
             <Image
-              src={img2}
-              width={36}
+              src={Facebook}
+              className=""
+              width={47}
               height={36}
               alt="social icon of Facebook"
             ></Image>
             <Image
-              src={img3}
+              src={Gmail}
               width={36}
               height={36}
               alt="social icon of Gmail"
             ></Image>
             <Image
-              src={img4}
+              src={Instagram}
               width={36}
               height={36}
               alt="social icon of Instagram"
             ></Image>
           </div>
+
           <h6 className="order-3">Terms of use / Privacy policy</h6>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
