@@ -96,7 +96,7 @@ const StudyChallenge = () => {
                 src={Assignment}
                 alt="Assignment"
               ></Image>
-              <h4 className="text-center">Assignment & exam Topics</h4>
+              <h4 className="text-center">Assignment & <br /> exam Topics</h4>
             </div>
 
             <div>
@@ -107,7 +107,7 @@ const StudyChallenge = () => {
                 src={Skill}
                 alt="Skill"
               ></Image>
-              <h4 className="text-center">Skill Development & Research Topics</h4>
+              <h4 className="text-center">Skill Development & <br /> Research Topics</h4>
             </div>
 
             <div>

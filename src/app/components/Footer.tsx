@@ -41,7 +41,7 @@ const Footer = () => {
 
       <div className="mx-auto mt-10 h-auto max-w-[1196px]">
         <div className="flex flex-col items-center justify-between font-poppins text-xs font-bold text-[#FFFFFF] lg:flex-row">
-          <h6 className="order-2 lg:order-1">
+          <h6 className="order-2 lg:order-1 text-center">
             Copyright © 2024 Pro Study Mate. All rights reserved.
           </h6>
 
