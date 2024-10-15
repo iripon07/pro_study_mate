@@ -31,39 +31,44 @@ const Header = () => {
             height={63}
           ></Image>
         </Link>
-        <div className="md:flex gap-6 font-poppins text-base font-semibold text-[#4B5155BF] hidden">
+        <div className="hidden gap-6 font-poppins text-base font-semibold text-[#4B5155BF] md:flex">
           <Link
-            className={`link ${pathname === "/" ? "text-primary" : ""}`}
+            className={`link ${pathname === "/" ? "text-primary" : "hover:text-primary"}`}
             href="/"
           >
             Home
           </Link>
           <Link
-            className={`link ${pathname === "/job" ? "text-[17px] text-primary" : ""}`}
+            className={`link ${pathname === "/job" ? "text-[17px] text-primary" : "hover:text-primary"}`}
             href="/job"
           >
             Job
           </Link>
-          <Link href="/student">Student Room</Link>
-          <Link href="/workshop">Workshop</Link>
-          <Link href="/">About Us</Link>
+          <Link className="hover:text-primary" href="/student">
+            Student Room
+          </Link>
+          <Link className="hover:text-primary" href="/workshop">
+            Workshop
+          </Link>
+          <Link className="hover:text-primary" href="/">
+            About Us
+          </Link>
         </div>
-       
 
         <div className="flex gap-6 text-center">
           <Link
             href="/sign"
-            className="md:block hidden min-w-[115px] rounded  border-2 border-primary bg-primary px-4 py-2 text-sm font-semibold text-[#FFFFFF]"
+            className="hidden min-w-[115px] rounded border-2 border-primary bg-primary px-4 py-2 text-sm font-semibold text-[#FFFFFF] md:block"
           >
             Sign Up
           </Link>
           <Link
             href="/login"
-            className="md:block hidden min-w-[115px] rounded border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition duration-300 ease-in-out hover:bg-primary hover:text-white"
+            className="hidden min-w-[115px] rounded border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition duration-300 ease-in-out hover:bg-primary hover:text-white md:block"
           >
             Log In
           </Link>
-          <Image src={User} alt="User" className="md:hidden block"></Image>
+          <Image src={User} alt="User" className="block md:hidden"></Image>
         </div>
       </div>
     </nav>
