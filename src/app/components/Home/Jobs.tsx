@@ -7,14 +7,13 @@ const Jobs = () => {
     <div className="my-12 px-6 md:px-10">
       <div className="mx-auto mb-[47px] max-w-[310px] font-poppins lg:max-w-[727px]">
         <div
-          style={{ border: "1px solid green" }}
           className="flex items-end justify-between"
         >
           <hr
             style={{ border: "1.25px solid #4B51554D" }}
             className="hidden w-[139px] lg:block"
           />
-          <h1 className="text-center text-5xl text-[32px] font-semibold text-primary">
+          <h1 className="mx-auto md:text-5xl text-[30px] font-semibold text-primary">
             Recent Jobs!
           </h1>
           <hr
@@ -22,7 +21,7 @@ const Jobs = () => {
             className="hidden w-[139px] lg:block"
           />
         </div>
-        <p className="mt-1 text-center text-[22px] font-semibold text-[#4B5155BF] lg:mt-4">
+        <p className="mt-1 text-center md:text-[22px] text-lg font-semibold text-[#4B5155BF] md:mt-4">
           Pick the one that fits your skill set
         </p>
       </div>

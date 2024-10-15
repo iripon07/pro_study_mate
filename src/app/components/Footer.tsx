@@ -7,12 +7,21 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className="bg-primary lg:py-10 py-[58px] px-[53px]">
-      <div className="mx-auto max-w-[1160px] hidden lg:block">
-
-        <div className="flex items-center justify-between text-sm font-semibold text-white">
+    <div className="bg-primary px-[53px] py-[58px] lg:py-10">
+      <div className="mx-auto hidden max-w-[1160px] md:block">
+        <div className="flex justify-between text-sm font-semibold text-white">
           <div className="space-y-4">
             <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+          </div>
+          <div className="space-y-4">
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+            <h6>Lorem ipsum</h6>
+          </div>
+          <div className="space-y-4">
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
@@ -24,19 +33,6 @@ const Footer = () => {
             <h6>Lorem ipsum</h6>
           </div>
           <div className="space-y-4">
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-          </div>
-          <div className="space-y-4">
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-            <h6>Lorem ipsum</h6>
-          </div>
-          <div className="space-y-4">
-            <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
             <h6>Lorem ipsum</h6>
@@ -44,11 +40,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mx-auto h-auto mt-10 max-w-[1196px]">
-
-        <div className="flex items-center justify-between lg:flex-row flex-col text-xs font-poppins font-bold text-[#FFFFFF]">
-          <h6 className='lg:order-1 order-2'>Copyright © 2024 Pro Study Mate. All rights reserved.</h6>
-          <div className="flex gap-6 lg:order-2 order-1 lg:mb-0 mb-4">
+      <div className="mx-auto mt-10 h-auto max-w-[1196px]">
+        <div className="flex flex-col items-center justify-between font-poppins text-xs font-bold text-[#FFFFFF] lg:flex-row">
+          <h6 className="order-2 lg:order-1">
+            Copyright © 2024 Pro Study Mate. All rights reserved.
+          </h6>
+          <div className="order-1 mb-4 flex gap-6 lg:order-2 lg:mb-0">
             <a href="https://www.google.com/" target="_blank">
               <Image
                 src={img1}
@@ -76,7 +73,7 @@ const Footer = () => {
               alt="social icon of Instagram"
             ></Image>
           </div>
-          <h6 className='order-3'>Terms of use / Privacy policy</h6>
+          <h6 className="order-3">Terms of use / Privacy policy</h6>
         </div>
       </div>
     </div>

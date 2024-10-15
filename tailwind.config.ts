@@ -15,9 +15,10 @@ const config: Config = {
         white: "#FFFFFF",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        prosto: ["Prosto One", "cursive"],
-        nothing: ["Nothing You Could Do", "cursive"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
+        prosto: ["var(--font-prosto)", "cursive"],
+        handwriting: ["var(--font-nothing-you-could-do)", "cursive"],
+        alkatra: ["var(--font-alkatra)", "sans-serif"],
       },
     },
   },

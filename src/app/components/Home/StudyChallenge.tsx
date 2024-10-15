@@ -1,17 +1,17 @@
 import Image from "next/image";
-import Exam from "../../../assets/Vector.png"
-import Research from "../../../assets/Vector (2).png"
-import Skill from "../../../assets/Group (1).png"
-import World from "../../../assets/Vector (1).png"
-import Assignment from "../../../assets/Group.png"
+import Skill from "../../../assets/Group (1).png";
+import Assignment from "../../../assets/Group.png";
+import World from "../../../assets/Vector (1).png";
+import Research from "../../../assets/Vector (2).png";
+import Exam from "../../../assets/Vector.png";
 
 const StudyChallenge = () => {
   return (
-    <div className="px-10">
-      <h5 className="text-center font-nothing text-[32px] font-normal">
+    <div className="px-10 font-poppins">
+      <h5 className="font-handwriting hidden text-center text-[32px] md:block">
         Unlock solutions for your toughest study challenges.{" "}
       </h5>
-      <h1 className="text-center font-poppins text-[40px] font-semibold text-primary">
+      <h1 className="text-center font-prosto text-[40px] font-semibold text-primary">
         Get help with your
       </h1>
 
@@ -64,6 +64,12 @@ const StudyChallenge = () => {
             </button>
           </div>
         </div>
+      </div>
+
+      <div className="mt-3 flex items-center justify-center md:text-[40px] lg:mt-[54px]">
+        <button className="rounded bg-[#FB6107] px-10 py-2 font-semibold text-white md:bg-[#FA171B]">
+          Post Study Challenge
+        </button>
       </div>
     </div>
   );

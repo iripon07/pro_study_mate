@@ -23,7 +23,9 @@ const Workshop = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 pl-7 md:grid-cols-2 md:pl-[11px] lg:grid-cols-4">
+      
+
+      <div className="grid grid-cols-1 md:gap-6 gap-4 px-6 md:grid-cols-2 md:pl-[11px] lg:grid-cols-4">
         <div className="shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)]">
           <div className="group relative">
             <Image src={people} alt="Business people" className="w-full" />
