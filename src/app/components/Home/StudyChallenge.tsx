@@ -65,7 +65,7 @@ const StudyChallenge = () => {
             </button>
           </div>
 
-          <div style={{ border: "1px solid green" }}>
+          <div style={{ border: "1px solid red" }}>
             <Image className="mx-auto" src={Skill} alt="Image of Exam"></Image>
 
             <button
