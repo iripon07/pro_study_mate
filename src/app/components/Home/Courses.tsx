@@ -1,47 +1,55 @@
 import Image from "next/image";
-import Hero from "../../../assets/students-using-e-learning-platform-video-laptop-graduation-cap-online-education-platform-e-learning-platform-online-teaching-concept 1.png";
+import Hero from "../../../assets/StudentPlatform.png";
 
 const Courses = () => {
   return (
-    <div>
+    <div style={{ border: "1px solid green" }} className="container mx-auto">
       <div
         style={{ border: "1px solid red" }}
         className="relative flex items-center justify-center"
       >
-        <div style={{ border: "1px solid red" }} className="max-w-[48%]">
-          <Image src={Hero} alt="Courses Hero" className="w-full"></Image>
+        <div
+          style={{ border: "1px solid red" }}
+          className="w-full lg:max-w-[48%]"
+        >
+          <Image
+            src={Hero}
+            alt="Courses Hero"
+            quality={100}
+            className="w-full"
+          ></Image>
         </div>{" "}
-        <button className="absolute left-0 top-0 flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          Politics
+        <button className="absolute -bottom-[16%] left-[10%] flex h-[55px] w-[155px] items-center justify-center rounded-xl bg-white font-poppins text-base font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white md:left-[6%] md:top-[9%] md:w-[236px] md:text-lg">
+          Geography
         </button>
-        <button className="absolute left-1/4 top-1/4 flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
+        <button className="absolute right-[3.5%] top-[47%] flex h-[55px] w-[182px] items-center justify-center rounded-xl bg-white font-poppins text-base md:text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white md:left-[17.5%] md:top-[39%] md:w-[236px]">
           Art & Music
         </button>
-        <div className="absolute left-1/4 top-3/4 flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
+        <div className="absolute left-[0%] top-[27%] flex h-[55px] w-[182px] items-center justify-center rounded-xl bg-white font-poppins text-base font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white md:bottom-[19%] md:left-[16%] md:w-[236px] md:text-lg">
           Economic
         </div>
-        <div className="absolute bottom-0 left-0 flex h-[55px] w-[236px] items-center justify-center rounded-xl text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          <button className="font-poppins text-lg font-semibold">
+        <div className="">
+          <button className="absolute right-[9%] top-[4%] flex h-[55px] w-[182px] items-center justify-center rounded-xl bg-white font-poppins text-base font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white md:-bottom-[9%] md:left-[10%] md:w-[236px] md:text-lg">
             Politics
           </button>
         </div>
-        <div className="absolute right-0 top-0 flex h-[55px] w-[236px] items-center justify-center rounded-xl text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          <button className="font-poppins text-lg font-semibold">
+        <div className="hidden md:block">
+          <button className="absolute right-[19.5%] top-[9%] flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
             History
           </button>
         </div>
-        <div className="absolute right-1/4 top-1/4 flex h-[55px] w-[236px] items-center justify-center rounded-xl text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          <button className="font-poppins text-lg font-semibold">
+        <div className="hidden md:block">
+          <button className="absolute right-[6%] top-[30%] flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
             Chemistry{" "}
           </button>
         </div>{" "}
-        <div className="absolute bottom-1/4 right-1/4 flex h-[55px] w-[236px] items-center justify-center rounded-xl text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          <button className="font-poppins text-lg font-semibold">
+        <div className="hidden md:block">
+          <button className="absolute bottom-[21%] right-[17.7%] flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
             Civil Engineering{" "}
           </button>
         </div>{" "}
-        <div className="absolute bottom-0 right-0 flex h-[55px] w-[236px] items-center justify-center rounded-xl text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
-          <button className="font-poppins text-lg font-semibold">
+        <div className="hidden md:block">
+          <button className="absolute bottom-[5%] right-[4.5%] flex h-[55px] w-[236px] items-center justify-center rounded-xl bg-white font-poppins text-lg font-semibold text-primary shadow-[0_5px_15px_2px_rgba(100,100,111,0.2)] transition duration-300 ease-in-out hover:bg-primary hover:text-white">
             Social Science
           </button>
         </div>

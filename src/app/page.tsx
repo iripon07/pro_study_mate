@@ -1,4 +1,5 @@
 import Award from "./components/Home/Award";
+import Courses from "./components/Home/Courses";
 import Expertise from "./components/Home/Expertise";
 import GetYourWork from "./components/Home/GetYourWork";
 import Hero from "./components/Home/Hero";
@@ -17,9 +18,8 @@ export default function Home() {
       <GetYourWork />
       <JobMentors />
       <Jobs />
-      {/* <Courses /> */}
+      <Courses />
       <Workshop />
-      {/* <CardSlider/>  */}
     </div>
   );
 }
