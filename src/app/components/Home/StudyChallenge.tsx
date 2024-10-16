@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Skill from "../../../assets/Skill1.png";
 import Assignment from "../../../assets/Group.png";
-import World from "../../../assets/World.png";
+import Skill from "../../../assets/Skill1.png";
 import Research from "../../../assets/Vector (2).png";
 import Exam from "../../../assets/Vector.png";
+import World from "../../../assets/World.png";
 
 const StudyChallenge = () => {
   return (
@@ -12,12 +12,14 @@ const StudyChallenge = () => {
         <h5 className="hidden text-center font-handwriting text-[32px] md:block">
           Unlock solutions for your toughest study challenges.{" "}
         </h5>
-        <h1 className="text-center mb-[10px] font-prosto text-[40px] font-semibold text-primary">
+        <h1 className="mb-[10px] lg:mb-[80px] md:mb-7 text-center font-prosto text-[40px] font-semibold text-primary">
           Get help with your
         </h1>
 
         <div className="hidden md:block">
-          <div className="flex flex-wrap justify-between">
+          <div
+            className="flex flex-wrap justify-between"
+          >
             <div>
               <Image className="mx-auto" src={Exam} alt="Image of Exam"></Image>
               <button
@@ -54,7 +56,7 @@ const StudyChallenge = () => {
               </button>
             </div>
 
-            <div>
+            <div >
               <Image
                 className="mx-auto"
                 src={Research}
@@ -69,15 +71,17 @@ const StudyChallenge = () => {
               </button>
             </div>
 
-            <div style={{ border: "1px solid red" }}>
+            <div >
               <Image
-                className="mx-auto"
+                className="mx-auto mb-14"
                 src={Skill}
                 alt="Image of Exam"
               ></Image>
 
               <button
-                style={{ boxShadow: `#00000026 0px 5px 15px 2px` }}
+                style={{
+                  boxShadow: `#00000026 0px 5px 15px 2px`,
+                }}
                 className="w-full rounded-lg px-4 py-2 font-poppins text-lg font-semibold text-primary"
               >
                 Skill Based Topics
@@ -96,7 +100,9 @@ const StudyChallenge = () => {
                 src={Assignment}
                 alt="Assignment"
               ></Image>
-              <h4 className="text-center">Assignment & <br /> exam Topics</h4>
+              <h4 className="text-center">
+                Assignment & <br /> exam Topics
+              </h4>
             </div>
 
             <div>
@@ -107,7 +113,9 @@ const StudyChallenge = () => {
                 src={Skill}
                 alt="Skill"
               ></Image>
-              <h4 className="text-center">Skill Development & <br /> Research Topics</h4>
+              <h4 className="text-center">
+                Skill Development & <br /> Research Topics
+              </h4>
             </div>
 
             <div>
