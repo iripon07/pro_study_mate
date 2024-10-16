@@ -6,7 +6,7 @@ import Instagram from "../../assets/instagram.png";
 
 const Footer = () => {
   return (
-    <div className="bg-primary px-[53px] py-[58px] lg:py-10">
+    <div className="bg-primary px-[53px] py-[58px] lg:py-10 mt-6">
       <div className="mx-auto hidden container md:block">
         <div className="flex justify-between text-sm font-semibold text-white">
           <div className="space-y-4">

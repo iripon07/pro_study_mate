@@ -6,22 +6,20 @@ const Hero = () => {
   return (
     <div>
       <div className="container mx-auto mb-[44px] pb-6 shadow-[0px_4px_15px_2px_#184E770D] lg:mb-7">
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-6">
-
+        <div className="mx-6 grid grid-cols-1 md:grid-cols-2">
           <div className="flex items-end justify-start font-poppins">
-
             <div className="relative mx-auto flex max-w-[541px] flex-col lg:mb-[81px]">
-              <h1 className="order-2 lg:order-1 lg:text-start mb-[13px] text-center font-prosto lg:text-[40px] text-xl text-primary lg:mb-10">
+              <h1 className="order-2 mb-[13px] text-center font-prosto text-xl text-primary lg:order-1 lg:mb-10 lg:text-start lg:text-[40px]">
                 Find your Mentor
               </h1>
 
               <Image
                 src={Circle}
                 alt="Circle"
-                className="absolute -top-[33%] right-[13%] hidden  lg:block"
+                className="absolute -top-[33%] right-[13%] hidden lg:block"
               ></Image>
 
-              <div className="relative order-3 lg:order-2 flex items-center justify-between lg:px-0">
+              <div className="relative order-3 flex items-center justify-between lg:order-2 lg:px-0">
                 <input
                   style={{ border: "1px solid #4B515559" }}
                   type="text"
@@ -33,7 +31,7 @@ const Hero = () => {
                 </button>
               </div>
 
-              <h6 className="order-1 lg:order-3 mb-[6px] mt-[33px] text-center font-alkatra text-xs font-semibold text-[#4B5155BF] lg:mb-0 lg:text-base">
+              <h6 className="order-1 mb-[6px] mt-[33px] text-center font-alkatra text-xs font-semibold text-[#4B5155BF] lg:order-3 lg:mb-0 lg:text-base">
                 Study Smarter, Not Harder – Expert Mentors Are Just a Click
                 Away!
               </h6>
