@@ -5,7 +5,7 @@ import Workshop from "../../../assets/Workshop.png";
 const Expertise = () => {
   return (
     <div className="mt-[47px]">
-      <h3 className="font-handwriting mb-[34px] hidden text-center text-[32px] text-[#000000] md:block">
+      <h3 className="mb-[34px] hidden text-center font-handwriting text-[32px] text-[#000000] md:block">
         Help students succeed and get paid for your expertise
       </h3>
       <div className="mx-auto max-w-[880px]">
@@ -13,22 +13,15 @@ const Expertise = () => {
           Turn Expertise into Income
         </h3>
 
-        <div className="flex flex-col justify-between sm:flex-row">
-          <div
-            style={{ boxShadow: "0px 5px 15px 2px rgba(0, 0, 0, 0.15)" }}
-            className="flex min-w-[315.7px] items-center justify-center rounded-lg border-4 border-primary py-2 text-center text-xl font-semibold text-primary"
-          >
+        <div className="flex justify-between px-2 md:flex-row">
+          <div className="flex flex-col items-center justify-center rounded-lg py-2 text-center text-xl font-semibold text-primary md:min-w-[315.7px] md:flex-row md:border-4 md:border-primary">
             <Image src={Student} alt="Student"></Image>
-            <h6 className="ml-2">Help Student</h6>
+            <h6 className="mt-2 md:ml-2 md:mt-0">Help Student</h6>
           </div>
-          <div
-            style={{
-              boxShadow: "0px 5px 15px 2px rgba(0, 0, 0, 0.15)",
-            }}
-            className="flex min-w-[315.7px] items-center justify-center rounded-lg border-4 border-primary py-2 text-center text-xl font-semibold text-primary"
-          >
+
+          <div className="flex flex-col items-center justify-center rounded-lg border-primary py-2 text-center text-xl font-semibold text-primary md:min-w-[315.7px] md:flex-row md:border-4">
             <Image src={Workshop} alt="Student"></Image>
-            <h6 className="ml-2">Organize Workshop</h6>
+            <h6 className="mt-2 md:ml-2 md:mt-0">Organize Workshop</h6>
           </div>
         </div>
         <div className="mt-3 flex items-center justify-center md:text-[40px] lg:mt-[54px]">
