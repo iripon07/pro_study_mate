@@ -7,7 +7,7 @@ import Instagram from "../../assets/instagram.png";
 const Footer = () => {
   return (
     <div className="bg-primary px-[53px] py-[58px] lg:py-10">
-      <div className="mx-auto hidden max-w-[1160px] md:block">
+      <div className="mx-auto hidden container md:block">
         <div className="flex justify-between text-sm font-semibold text-white">
           <div className="space-y-4">
             <h6>Lorem ipsum</h6>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 h-auto max-w-[1196px]">
+      <div className="mx-auto mt-10 container">
         <div className="flex flex-col items-center justify-between font-poppins text-xs font-bold text-[#FFFFFF] lg:flex-row">
           <h6 className="order-2 lg:order-1 text-center">
             Copyright © 2024 Pro Study Mate. All rights reserved.
