@@ -12,7 +12,7 @@ const Award = () => {
   const CountUp = dynamic(() => import("react-countup"), { ssr: false });
 
   return (
-    <div className="container mx-auto mt-12 px-3">
+    <div className="container mx-auto mt-12 px-4">
       <div className="mx-auto grid  grid-cols-2 gap-4 font-poppins md:flex md:justify-between">
         <div
           style={{ boxShadow: "0px 5px 15px 2px #FB610726" }}

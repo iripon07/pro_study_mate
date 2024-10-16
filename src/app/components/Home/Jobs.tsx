@@ -12,7 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Jobs = () => {
   return (
-    <div className="my-12 px-6 md:px-10">
+    <div className="my-12 px-4 container mx-auto">
+
       <div className="mx-auto mb-[47px] max-w-[310px] font-poppins lg:max-w-[727px]">
         <div className="flex items-end justify-between">
           <hr
@@ -32,7 +33,7 @@ const Jobs = () => {
         </p>
       </div>
 
-      <Swiper 
+      <Swiper
         loop={true}
         spaceBetween={30}
         autoplay={{
@@ -56,8 +57,7 @@ const Jobs = () => {
         }}
         className="mySwiper"
       >
-        <SwiperSlide className="pb-10"
-        >
+        <SwiperSlide className="pb-10">
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
             className="rounded-xl px-[36px] py-[45px]"
@@ -71,7 +71,7 @@ const Jobs = () => {
                 className="mr-3"
               ></Image>
 
-              <div className="w-full text-sm">
+              <div className="flex w-full flex-col justify-between text-sm">
                 <h5 className="font-semibold text-primary">
                   Local Economies: A Study Approach
                 </h5>
@@ -116,7 +116,7 @@ const Jobs = () => {
                 className="mr-3"
               ></Image>
 
-              <div className="w-full text-sm">
+              <div className="flex w-full flex-col justify-between text-sm">
                 <h5 className="font-semibold text-primary">
                   Local Economies: A Case Study Approach
                 </h5>
@@ -161,7 +161,7 @@ const Jobs = () => {
                 className="mr-3"
               ></Image>
 
-              <div className="w-full text-sm">
+              <div className="flex w-full flex-col justify-between text-sm">
                 <h5 className="font-semibold text-primary">
                   Local Economies: A Case Study Approach
                 </h5>
@@ -206,7 +206,7 @@ const Jobs = () => {
                 className="mr-3"
               ></Image>
 
-              <div className="w-full text-sm">
+              <div className="flex w-full flex-col justify-between text-sm">
                 <h5 className="font-semibold text-primary">
                   Local Economies: A Case Study Approach
                 </h5>
@@ -251,7 +251,7 @@ const Jobs = () => {
                 className="mr-3"
               ></Image>
 
-              <div className="w-full text-sm">
+              <div className="flex w-full flex-col justify-between text-sm">
                 <h5 className="font-semibold text-primary">
                   Local Economies: A Case Study Approach
                 </h5>
