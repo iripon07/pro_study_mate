@@ -12,7 +12,7 @@ const StudyChallenge = () => {
         <h5 className="hidden text-center font-handwriting text-[32px] md:block">
           Unlock solutions for your toughest study challenges.{" "}
         </h5>
-        <h1 className="mb-[10px] lg:mb-[80px] md:mb-7 text-center font-prosto text-[40px] font-semibold text-primary">
+        <h1 className="mb-[10px] lg:mb-[80px] md:mb-7 text-center font-prosto text-xl md:text-[40px] font-semibold text-primary">
           Get help with your
         </h1>
 
