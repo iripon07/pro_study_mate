@@ -32,7 +32,7 @@ const Jobs = () => {
         </p>
       </div>
 
-      <Swiper
+      <Swiper 
         loop={true}
         spaceBetween={30}
         autoplay={{
@@ -56,8 +56,7 @@ const Jobs = () => {
         }}
         className="mySwiper"
       >
-        <SwiperSlide
-          style={{ boxShadow: "0px 5px 15px 2px rgba(100, 100, 111, 0.2)" }}
+        <SwiperSlide className="pb-10"
         >
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
@@ -103,7 +102,7 @@ const Jobs = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="pb-10">
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
             className="rounded-xl px-[36px] py-[45px]"
@@ -148,7 +147,7 @@ const Jobs = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="pb-10">
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
             className="rounded-xl px-[36px] py-[45px]"
@@ -193,7 +192,7 @@ const Jobs = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="pb-10">
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
             className="rounded-xl px-[36px] py-[45px]"
@@ -238,7 +237,7 @@ const Jobs = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="pb-10">
           <div
             style={{ boxShadow: `rgba(100, 100, 111, 0.2) 0px 5px 15px 2px` }}
             className="rounded-xl px-[36px] py-[45px]"
