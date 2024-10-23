@@ -15,6 +15,7 @@ const config: Config = {
         secondary: "#4189DD",
         grey: "#4B5155",
         white: "#FFFFFF",
+        blue: "#1877F2",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
