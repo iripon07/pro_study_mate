@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "../../../assets/StudentPlatform.png";
+import Hero from "@/assets/StudentPlatform.png";
 
 const Courses = () => {
   return (

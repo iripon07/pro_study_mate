@@ -12,6 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#184E77",
+        secondary: "#4189DD",
+        grey: "#4B5155",
         white: "#FFFFFF",
       },
       fontFamily: {

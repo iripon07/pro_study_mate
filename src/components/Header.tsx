@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import logo from "../../assets/logo.png";
-import User from "../../assets/User.png"
-import Hamburger from "../../assets/Hambruger.png"
+import logo from "../assets/logo.png";
+import User from "../assets/User.png"
+import Hamburger from "../assets/Hamburger.png"
 // import jobImage from "../../assets/job.png"
 
 const Header = () => {
@@ -42,10 +42,10 @@ const Header = () => {
             >
               Job
             </Link>
-            <Link className="hover:text-primary" href="/student">
+            <Link href="/student">
               Student Room
             </Link>
-            <Link className="hover:text-primary" href="/workshop">
+            <Link className= {`link ${pathname === "/workshop" ? "text-[17px] text-primary" :"hover:text-primary"}`} href="/workshop">
               Workshop
             </Link>
             <Link className="hover:text-primary" href="/">

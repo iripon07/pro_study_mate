@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Alkatra, Nothing_You_Could_Do, Poppins, Prosto_One } from "next/font/google";
+import {
+  Alkatra,
+  Nothing_You_Could_Do,
+  Poppins,
+  Prosto_One,
+} from "next/font/google";
 import localFont from "next/font/local";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import "./globals.css";
-
-
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -24,10 +27,10 @@ const prostoOne = Prosto_One({
 });
 
 const alkatra = Alkatra({
-  weight:['400'],
-  subsets:['latin'],
-  variable:"--font-alatra"
-})
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-alatra",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

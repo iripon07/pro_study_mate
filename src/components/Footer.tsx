@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Facebook from "../../assets/facebook.png";
-import Gmail from "../../assets/gmail.png";
-import Google from "../../assets/google.png";
-import Instagram from "../../assets/instagram.png";
+import Facebook from "@/assets/facebook.png";
+import Gmail from "@/assets/gmail.png";
+import Google from "@/assets/google.png";
+import Instagram from "@/assets/instagram.png";
 
 const Footer = () => {
   return (

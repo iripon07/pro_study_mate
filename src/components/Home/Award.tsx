@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image";
-import Members from "../../../assets/Members.png";
-import Project from "../../../assets/Project.png";
-import Reviews from "../../../assets/Reviews.png";
-import Transaction from "../../../assets/Transaction.png";
+import Members from "@/assets/Members.png";
+import Project from "@/assets/Project.png";
+import Reviews from "@/assets/Reviews.png";
+import Transaction from "@/assets/Transaction.png";
 import dynamic from "next/dynamic";
 
 const Award = () => {

@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import people from "../../../assets/Business.png";
+import people from "@/assets/Business.png";
 
 const Workshop = () => {
   return (

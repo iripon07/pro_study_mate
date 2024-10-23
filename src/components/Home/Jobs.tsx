@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import vector from "../../../assets/Vector122.png";
+import vector from "@/assets/JobImage.png";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
