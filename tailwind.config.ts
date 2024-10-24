@@ -16,6 +16,7 @@ const config: Config = {
         grey: "#4B5155",
         white: "#FFFFFF",
         blue: "#1877F2",
+        black: "#000000",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
