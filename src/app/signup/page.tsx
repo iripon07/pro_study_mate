@@ -8,16 +8,17 @@ const SignUp = () => {
     <div>
       <div className="container mx-auto">
         <div className="mx-auto my-14 w-[627px]">
+          
           <div className="mb-10 text-center">
-            <h3 className="mb-6 text-[32px] font-semibold text-black">
+            <p className="mb-6 text-[32px] font-semibold text-black">
               Let's create your account!
-            </h3>
-            <h6 className="text-[15px] font-light text-[#777777]">
+            </p>
+            <p className="text-[15px] font-light text-[#777777]">
               Already have an account? 
               <Link className="text-[#FB6107] underline" href="/login">
                 &nbsp;Log In!
               </Link>
-            </h6>
+            </p>
           </div>
 
           <form>

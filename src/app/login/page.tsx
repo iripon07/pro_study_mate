@@ -10,11 +10,13 @@ const Login = () => {
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-center">
+
         <div className="bg-whiteSmoke w-[819px] rounded-[5px] px-[117px] py-11 font-poppins">
+
           <div>
-            <h6 className="text-center text-2xl font-semibold text-black">
+            <p className="text-center text-2xl font-semibold text-black">
               Sign in to Mentorze
-            </h6>
+            </p>
 
             <div className="mx-auto mb-[60px] mt-4 w-[125.1px] border-2 border-[#FB6107]" />
           </div>
@@ -55,7 +57,7 @@ const Login = () => {
                 src={googleIcon}
                 alt="Google Icon"
               ></Image>
-              <h6 className="py-[10px]">Sign in with Google</h6>
+              <p className="py-[10px]">Sign in with Google</p>
             </div>
             <div className="flex items-center cursor-pointer justify-start rounded border-[1px] border-primary pl-4 text-black">
               <Image
@@ -65,17 +67,17 @@ const Login = () => {
                 height={38}
                 alt="Google Icon"
               ></Image>
-              <h6 className="py-[10px]">Sign in with facebook</h6>
+              <p className="py-[10px]">Sign in with facebook</p>
             </div>
           </div>
 
           <div className="flex items-center justify-between">
-            <h6 className="text-xl font-medium text-black">
+            <p className="text-xl font-medium text-black">
               Need an account ?
               <span className="text-[#FB6107]">
                 <Link href="signup"> Join us Now </Link>
               </span>
-            </h6>
+            </p>
             <Link
               className="text-xs font-light text-black"
               href="/forgotpassword"
@@ -83,6 +85,7 @@ const Login = () => {
               Forgot Password ?{" "}
             </Link>
           </div>
+          
         </div>
       </div>
     </div>

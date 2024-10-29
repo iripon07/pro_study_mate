@@ -8,9 +8,9 @@ const Banner = () => {
     <div className="container mx-auto">
       <div className="flex">
         <div>
-          <h6 className="font-istok text-xl font-bold text-[#FB6107]">
+          <p className="font-istok text-xl font-bold text-[#FB6107]">
             Get Started
-          </h6>
+          </p>
           <h1 className="font-rajdhani text-4xl font-bold text-[#1E1E1E]">
             A better way to tackle university challenges is coming
           </h1>
@@ -20,7 +20,7 @@ const Banner = () => {
           </p>
 
           <div className="text-base font-poppins font-normal">
-            <h5>Searching Tips:</h5>
+            <p>Searching Tips:</p>
           </div>
           <div className="rounded border-[1px] mt-10 border-[#4B515559] flex justify-between items-center">
             <input type="text" placeholder="What are you looking for?" className="pl-6 w-full outline-none" />

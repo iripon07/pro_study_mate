@@ -2,13 +2,15 @@
 
 const Workshop = () => {
   return (
-    <div className="bg-[#F5F5F5]">
-      <div className="container mx-auto">
-        <div className="text-center">
-          <h3 className="text-[40px] font-medium text-[#1E1E1E]">
+    <div className="bg-whiteSmoke">
+      <div className="container mx-auto py-9">
+        <div className="text-center mb-[110px]">
+          <h2 className="text-[40px] font-medium text-[#1E1E1E]">
             Latest Workshop
-          </h3>
-          <h6 className="text-xl font-normal text-[#4B5155BF]">#4B5155BF</h6>
+          </h2>
+          <p className="text-xl font-normal text-[#4B5155BF]">
+            Join Our Interactive Workshops for Skills, Strategies, and Success
+          </p>
         </div>
       </div>
     </div>

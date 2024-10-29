@@ -2,7 +2,8 @@ import Banner from "@/components/Home/Banner";
 import Challenge from "@/components/Home/Challenge";
 import Mentor from "@/components/Home/Mentor";
 import RecentJobs from "@/components/Home/RecentJobs";
-import Workshop from "./workshop/page";
+import Workshop from "@/components/Home/Workshop";
+
 
 export default function Home() {
   return (
