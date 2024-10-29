@@ -10,9 +10,9 @@ const Header = () => {
   return (
     <div className="shadow-[0px_5px_15px_2px_#184E770D]">
       <div className="container mx-auto flex h-[108px] items-center justify-between">
-        <div>
+        <Link href="/">
           <Image src={logo} alt="Logo"></Image>
-        </div>
+        </Link>
         <div className="flex space-x-6 text-xl font-semibold text-[#4B5155BF]">
           <Link
             className={
