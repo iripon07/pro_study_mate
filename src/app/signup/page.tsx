@@ -1,106 +1,176 @@
-import facebook from "@/assets/FacebookLogin.png";
-import googleIcon from "@/assets/GoogleLogin.png";
+import Link from "next/link";
+import facebook from "@/assets/Mentorze/facebook.png";
+import googleIcon from "@/assets/Mentorze/google.png";
 import Image from "next/image";
 
 const SignUp = () => {
   return (
     <div>
-      <div style={{ border: "1px solid red" }} className="container mx-auto">
-        <div
-          style={{ border: "1px solid red" }}
-          className="mx-auto my-14 max-w-[678px]"
-        >
-          <div>
-            <h3 className="mb-[6px] text-center font-poppins text-[32px] font-medium text-grey">
-              Please do Multi Step Form{" "}
+      <div className="container mx-auto">
+        <div className="mx-auto my-14 w-[627px]">
+          <div className="mb-10 text-center">
+            <h3 className="mb-6 text-[32px] font-semibold text-black">
+              Let's create your account!
             </h3>
-            <h6 className="text-center font-prosto text-[13px] font-normal text-black">
-              We're always looking for talented Mentors
+            <h6 className="text-[15px] font-light text-[#777777]">
+              Already have an account? 
+              <Link className="text-[#FB6107] underline" href="/login">
+                &nbsp;Log In!
+              </Link>
             </h6>
           </div>
 
-          <div className="mt-[26px] flex gap-4">
-            <div className="flex w-full items-center justify-start rounded border-[1px] border-[#184E7780] py-[6px] pl-3">
-              <div className="rounded-[10px] bg-[#E9EBED] px-3 py-[9px]">
-                <Image src={facebook} alt="Facebook Icon"></Image>
+          <form>
+            <div className="mb-6 flex gap-[37px]">
+              <div className="w-full">
+                <label className="mb-[14px] text-[13px] font-medium text-black">
+                  First Name<span className="text-[#FE696A]">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter first name"
+                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                />
               </div>
-              <h6 className="ml-[22.5px] text-center text-base font-semibold text-blue">
-                Continue with Facebook
-              </h6>
+
+              <div className="w-full">
+                <label className="mb-[14px] text-[13px] font-medium text-black">
+                  First Name<span className="text-[#FE696A]">*</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter last name"
+                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                />
+              </div>
             </div>
 
-            <div className="flex w-full items-center rounded bg-blue text-base font-semibold text-white">
-              <div className="ml-3 mr-6 rounded-2xl bg-white px-[9px] py-[4px]">
-                <Image src={googleIcon} alt="Google Icon "></Image>
-              </div>
-              <h6>Continue with Google</h6>
-            </div>
-          </div>
-
-          <div className="my-[36px] flex items-center justify-center">
-            {/* <div className="border-[1.25px] border-[#4B51554D]"></div> */}
-            <hr className="w-full border-[1.25px] border-[#4B51554D]" />
-            <span className="px-3 font-poppins text-base font-[275] text-grey">
-              OR
-            </span>
-            <hr className="w-full border-[1.25px] border-[#4B51554D]" />
-          </div>
-
-          <div className="flex w-full gap-[33px]">
-            <div className="w-full">
-              <label className="mb-2 block font-poppins text-[13px] font-medium text-grey">
-                Given Name<span className="text-red">*</span>
+            <div className="mb-[14px] w-full">
+              <label className="mb-[14px] text-[13px] font-medium text-black">
+                Email<span className="text-[#FE696A]">*</span>
               </label>
               <input
                 type="text"
-                placeholder="Type Here"
-                className="w-full rounded border-[1px] border-[#4B515580] py-4 pl-6 text-sm text-[#4B5155B3] outline-2 placeholder:text-[#4B515559] focus:outline-[#4B515559]"
+                placeholder="Enter email"
+                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
             </div>
+
             <div className="w-full">
-              <label className="mb-2 block font-poppins text-[13px] font-medium text-grey">
-                Surname<span className="text-red">*</span>
+              <label className="mb-[14px] text-[13px] font-medium text-black">
+                Password<span className="text-[#FE696A]">*</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Enter password "
+                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+              />
+            </div>
+
+            <div className="w-full">
+              <label className="mb-[14px] text-[13px] font-semibold text-black">
+                Course Name<span className="text-[#FE696A]">*</span>
               </label>
               <input
                 type="text"
-                placeholder="Type Here"
-                className="w-full rounded border-[1px] border-[#4B515580] py-4 pl-6 text-sm text-[#4B5155B3] outline-2 placeholder:text-[#4B515559] focus:outline-[#4B515559]"
+                placeholder="Masters of computer science"
+                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
             </div>
-          </div>
 
-          <div className="my-[36px] w-full">
-            <label className="mb-2 block font-poppins text-[13px] font-medium text-grey">
-              Email<span className="text-red">*</span>
-            </label>
-            <input
-              type="email"
-              placeholder="Enter you email  address"
-              className="w-full rounded border-[1px] border-[#4B515580] py-4 pl-6 text-sm text-[#4B5155B3] outline-2 placeholder:text-[#4B515559] focus:outline-[#4B515559]"
-            />
-          </div>
+            <div>
+              <div>
+                <input type="checkbox" />
+                <label className="text-[13px] font-light text-black" htmlFor="">
+                  I am a Student
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" />
+                <label className="text-[13px] font-light text-black" htmlFor="">
+                  I am a Mentor
+                </label>
+              </div>
+            </div>
 
-          <div className="w-full relative">
-            <label className="mb-2 block font-poppins text-[13px] font-medium text-grey">
-              Password<span className="text-red">*</span>
-            </label>
+            <div>
+              <input type="checkbox" />
+              <label className="text-xs font-normal text-black" htmlFor="">
+                 I agree to the {" "}
+                <Link className="underline" href="/terms">
+                  Terms and Conditions
+                </Link>
+              </label>
+            </div>
+
             <input
-              type="password"
-              placeholder="Password (8 or more characters)"
-              className="w-full rounded border-[1px] border-[#4B515580] text-sm py-4 pl-6 text-[#4B5155B3] outline-2 placeholder:text-[#4B515559] focus:outline-[#4B515559]"
+              className="w-full rounded-sm bg-[#FB6107] py-[6px] text-[25px] font-medium text-white"
+              type="submit"
+              value="Continue"
             />
-            <svg
-              className="h-[13px] w-[13px] absolute right-[2%] cursor-pointer  top-[63%] text-[#4B5155BA]"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 512"
-            >
-              <path
-                fill="currentColor"
-                d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
-              ></path>
-            </svg>
+          </form>
+
+          <div className="my-[50px] grid grid-cols-2 gap-6 text-xs font-normal">
+            <div className="flex cursor-pointer items-center justify-start rounded bg-[#4585F4] pl-4 text-white">
+              <Image
+                className="mr-[5px]"
+                src={googleIcon}
+                alt="Google Icon"
+              ></Image>
+              <h6 className="py-[10px]">Sign in with Google</h6>
+            </div>
+            <div className="flex cursor-pointer items-center justify-start rounded border-[1px] border-primary pl-4 text-black">
+              <Image
+                className="mr-[10px]"
+                src={facebook}
+                width={38}
+                height={38}
+                alt="Google Icon"
+              ></Image>
+              <h6 className="py-[10px]">Sign in with facebook</h6>
+            </div>
           </div>
+        </div>
+
+        <div className="mb-[50px] text-center">
+          <h2 className="text-[32px] font-medium text-black">
+            Choose Your Perfect Necessity
+          </h2>
+
+          <p className="text-xs font-normal text-[#777777]">
+            Select the study support and skill-building essentials that empower
+            you to reach new heights in your academic and personal growth.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-x-5 gap-y-12">
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Assignment Help
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Course Masterclass
+          </button>{" "}
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Skill Development
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Research
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            CV
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Job Preparation
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Others
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Job Preparation
+          </button>
+          <button className="rounded-[50px] border-[1px] border-[#777777] px-12 py-[18px] text-base font-normal text-black">
+            Skill Development
+          </button>
         </div>
       </div>
     </div>

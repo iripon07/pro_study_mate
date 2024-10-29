@@ -18,7 +18,7 @@ const config: Config = {
         blue: "#1877F2",
         darkBlue: "#007AFF",
         black: "#000000",
-        red: "#FA171B",
+        red: "#FA171B", 
         whiteSmoke:"#F5F5F5"
       },
       fontFamily: {
