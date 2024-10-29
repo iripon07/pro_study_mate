@@ -7,9 +7,7 @@ const Footer = () => {
     <div>
       <div className="bg-white">
         <div className="container mx-auto mt-[128px]">
-          <div
-            className="flex items-center justify-between"
-          >
+          <div className="flex items-center justify-between">
             <div>
               <Image src={Mentorze} alt="Mentorze" quality={100}></Image>
             </div>
@@ -52,7 +50,6 @@ const Footer = () => {
                 246-345-0695 <br /> info@Zobstar123.com
               </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -64,7 +61,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      
     </div>
   );
 };
