@@ -6,8 +6,8 @@ import Review from "@/assets/Mentorze/Review.png";
 
 const Mentor = () => {
   return (
-    <div className="container mx-auto">
-      <div className="mb-[80px] mt-[72px] text-center text-grey">
+    <div className="container mx-auto my-[72px]">
+      <div className="mb-[80px] text-center text-grey">
         <h2 className="mb-2 text-[40px] font-medium">Meet Our Top Mentors</h2>
         <p className="text-xl font-normal">
           Experts Who’ve Guided Countless Students to Success
@@ -15,7 +15,6 @@ const Mentor = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-[83px]">
-
         <div className="rounded-t-[20px]">
           <Image
             className="w-full"
@@ -123,7 +122,6 @@ const Mentor = () => {
             <Image src={rightArrow} alt="Right Arrow"></Image>
           </button>
         </div>
-        
       </div>
     </div>
   );
