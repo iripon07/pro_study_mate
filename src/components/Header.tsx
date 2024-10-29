@@ -9,10 +9,7 @@ const Header = () => {
      const pathname = usePathname();
   return (
     <div className="shadow-[0px_5px_15px_2px_#184E770D]">
-      <div
-        style={{ border: "1px solid green" }}
-        className="container mx-auto flex h-[108px] items-center justify-between"
-      >
+      <div className="container mx-auto flex h-[108px] items-center justify-between">
         <div>
           <Image src={logo} alt="Logo"></Image>
         </div>
@@ -48,15 +45,23 @@ const Header = () => {
             Student Room
           </Link>
         </div>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 text-center text-sm font-semibold">
           <Link
-            className="block min-w-[115px] rounded border-2 border-primary py-2 text-center text-sm font-semibold text-primary duration-300 hover:border-none hover:bg-[#FE696A] hover:text-white"
+            className={
+              pathname == "/signup"
+                ? "min-w-[115px] rounded border-none bg-[#FE696A] py-2 text-white"
+                : "block min-w-[115px] rounded border-2 border-primary py-2 text-primary duration-300 hover:border-none hover:bg-[#FE696A] hover:text-white"
+            }
             href="/signup"
           >
             Sign Up
           </Link>
           <Link
-            className="block min-w-[115px] rounded border-2 border-primary py-2 text-center text-sm font-semibold text-primary"
+            className={
+              pathname == "/login"
+                ? "min-w-[115px] rounded border-none bg-[#FE696A] py-2 text-white"
+                : "block min-w-[115px] rounded border-2 border-primary py-2 text-primary duration-300 hover:border-none hover:bg-[#FE696A] hover:text-white"
+            }
             href="/login"
           >
             Log In

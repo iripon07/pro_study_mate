@@ -2,100 +2,85 @@ import emailIcon from "@/assets/emailIcon.png";
 import passwordIcon from "@/assets/passwordIcon.png";
 import Image from "next/image";
 import Link from "next/link";
-import facebook from "@/assets/FacebookLogin.png";
-import googleIcon from "@/assets/GoogleLogin.png";
+import facebook from "@/assets/Mentorze/facebook.png";
+import googleIcon from "@/assets/Mentorze/google.png";
+
 
 const Login = () => {
   return (
     <div className="container mx-auto">
-      <div className="my-12 flex items-center justify-center">
-        <div className="h-[752px] w-[328px] px-0 pt-12 font-poppins shadow-none md:w-[588px] md:px-[130px] md:shadow-[0px_5px_15px_2px_#184e7726]">
-          <h6 className="text-grey mb-[14px] text-start text-xl font-medium md:mb-[38px] md:text-center md:text-2xl">
-            Log in
-          </h6>
+      <div className="flex items-center justify-center">
+        <div className="bg-whiteSmoke w-[819px] rounded-[5px] px-[117px] py-11 font-poppins">
+          <div>
+            <h6 className="text-center text-2xl font-semibold text-black">
+              Sign in to Mentorze
+            </h6>
+
+            <div className="mx-auto mb-[60px] mt-4 w-[125.1px] border-2 border-[#FB6107]" />
+          </div>
 
           <form action="" className="w-full">
-            <div className="mb-[14px] flex items-center rounded border-[0.5px] border-[#4b51557f] py-4 pl-5">
-              <Image
-                src={emailIcon}
-                width={16}
-                height={16}
-                quality={100}
-                className="mr-6"
-                alt="Email Icon"
-              ></Image>
+            <div className="">
+              <label className="mb-[10px] text-base font-light text-black">
+                Email address *
+              </label>
               <input
                 type="email"
-                placeholder="Email"
-                className="text-sm text-[#4B515566] outline-none"
+                placeholder="Enter email address"
+                className="w-full rounded-[2px] border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
             </div>
-            <div className="flex items-center rounded border-[0.5px] border-[#4b51557f] py-4 pl-5">
-              <Image
-                src={passwordIcon}
-                width={16}
-                height={16}
-                quality={100}
-                className="mr-6"
-                alt="Password Icon"
-              ></Image>
+            <div className="my-6">
+              <label className="mb-[10px] text-base font-light text-black">
+                Password *
+              </label>
               <input
                 type="password"
-                placeholder="Password"
-                className="text-sm text-[#4B515566] outline-none"
+                placeholder="Enter password "
+                className="w-full rounded-[2px] border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
             </div>
 
-            <Link
-              href=""
-              className="mb-[18px] block text-end text-[13px] font-normal text-primary underline"
-            >
-              Forgot Password?
-            </Link>
             <input
               type="submit"
-              value="Continue"
-              className="bg-secondary w-full rounded py-[13px] text-base font-semibold text-white duration-300 hover:bg-[#4585F4]"
+              value="SIGN IN NOW"
+              className="w-full rounded-[2px] cursor-pointer bg-[#FB6107] py-[10px] text-xl font-medium text-white"
             />
           </form>
 
-          <div className="my-[38px] flex items-center justify-center">
-            {/* <div className="border-[1.25px] border-[#4B51554D]"></div> */}
-            <hr className="w-full border-[1.25px] border-[#4B51554D]" />
-            <span className="text-grey px-3 text-base">OR</span>
-            <hr className="w-full border-[1.25px] border-[#4B51554D]" />
-          </div>
-
-          <div className="bg-blue mb-[18px] flex items-center rounded py-[6px] text-base font-semibold text-white">
-            <div className="ml-3 mr-6 rounded-2xl bg-white px-[9px] py-[4px]">
-              <Image src={googleIcon} alt="Google Icon "></Image>
+          <div className="my-[50px] grid grid-cols-2 gap-6 text-xs font-normal">
+            <div className="flex items-center justify-start rounded cursor-pointer bg-[#4585F4] pl-4 text-white">
+              <Image
+                className="mr-[5px]"
+                src={googleIcon}
+                alt="Google Icon"
+              ></Image>
+              <h6 className="py-[10px]">Sign in with Google</h6>
             </div>
-            <h6>Continue with Google</h6>
-          </div>
-
-          <div className="mb-[68px] flex items-center justify-start rounded border-[1px] border-[#184E7780] py-[6px] pl-3">
-            <div className="rounded-[10px] bg-[#E9EBED] px-3 py-[9px]">
-              <Image src={facebook} alt="Facebook Icon"></Image>
+            <div className="flex items-center cursor-pointer justify-start rounded border-[1px] border-primary pl-4 text-black">
+              <Image
+                className="mr-[10px]"
+                src={facebook}
+                width={38}
+                height={38}
+                alt="Google Icon"
+              ></Image>
+              <h6 className="py-[10px]">Sign in with facebook</h6>
             </div>
-            <h6 className="text-blue ml-[22.5px] text-center text-base font-semibold">
-              Continue with Facebook
-            </h6>
           </div>
 
-          <div className="mt-[38px] flex items-center justify-between">
-            <hr className="w-[69px] border-[1.25px] border-[#4B51554D]" />
-            <h6 className="text-grey text-center text-[13px] font-medium">
-              Don’t have an account?
+          <div className="flex items-center justify-between">
+            <h6 className="text-xl font-medium text-black">
+              Need an account ?
+              <span className="text-[#FB6107]">
+                <Link href="signup"> Join us Now </Link>
+              </span>
             </h6>
-            <hr className="w-[69px] border-[1.25px] border-[#4B51554D]" />
-          </div>
-
-          <div className="mt-[18px] flex items-center justify-center">
             <Link
-              href=""
-              className="rounded-lg border-[1.25px] border-primary px-[56px] py-[6px] text-primary duration-300 hover:bg-primary hover:text-white"
+              className="text-xs font-light text-black"
+              href="/forgotpassword"
             >
-              Sign Up
+              Forgot Password ?{" "}
             </Link>
           </div>
         </div>
