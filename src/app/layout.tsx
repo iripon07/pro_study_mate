@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import type { Metadata } from "next";
 import {
   Alkatra,
@@ -9,7 +10,7 @@ import {
 } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -33,16 +34,15 @@ const alkatra = Alkatra({
   variable: "--font-alatra",
 });
 const istok = Istok_Web({
-  weight:["400", "700"],
-  subsets:["latin"],
-  variable:'--font-istok-web'
-})
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-istok-web",
+});
 const rajdhani = Rajdhani({
-  weight:["300", "400", "500", "600", "700"],
-  subsets:["latin"],
-  variable:'--font-rajdhani'
-})
-
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-rajdhani",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -72,6 +72,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
