@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import {
   Alkatra,
+  Istok_Web,
   Nothing_You_Could_Do,
   Poppins,
   Prosto_One,
+  Rajdhani,
 } from "next/font/google";
 import localFont from "next/font/local";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
@@ -31,6 +32,17 @@ const alkatra = Alkatra({
   subsets: ["latin"],
   variable: "--font-alatra",
 });
+const istok = Istok_Web({
+  weight:["400", "700"],
+  subsets:["latin"],
+  variable:'--font-istok-web'
+})
+const rajdhani = Rajdhani({
+  weight:["300", "400", "500", "600", "700"],
+  subsets:["latin"],
+  variable:'--font-rajdhani'
+})
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -56,11 +68,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${prostoOne.variable} ${nothingYouCouldDo.variable} ${alkatra.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${istok.variable} ${prostoOne.variable} ${nothingYouCouldDo.variable} ${rajdhani.variable} ${alkatra.variable} antialiased`}
       >
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
