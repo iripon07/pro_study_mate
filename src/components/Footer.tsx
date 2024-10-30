@@ -1,4 +1,4 @@
-import Mentorze from "@/assets/Mentorze/Mentorze.png";
+import Mentorze from "@/assets/Mentorze.png";
 import Image from "next/image";
 import Link from "next/link";
 

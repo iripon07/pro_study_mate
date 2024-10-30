@@ -1,6 +1,6 @@
 import Link from "next/link";
-import facebook from "@/assets/Mentorze/facebook.png";
-import googleIcon from "@/assets/Mentorze/google.png";
+import facebook from "@/assets/facebook.png";
+import googleIcon from "@/assets/google.png";
 import Image from "next/image";
 
 const SignUp = () => {
@@ -8,7 +8,6 @@ const SignUp = () => {
     <div>
       <div className="container mx-auto">
         <div className="mx-auto my-14 w-[627px]">
-          
           <div className="mb-10 text-center">
             <p className="mb-6 text-[32px] font-semibold text-black">
               Let's create your account!
@@ -30,7 +29,7 @@ const SignUp = () => {
                 <input
                   type="text"
                   placeholder="Enter first name"
-                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
                 />
               </div>
 
@@ -57,7 +56,7 @@ const SignUp = () => {
               />
             </div>
 
-            <div className="w-full">
+            <div className="mb-2 w-full">
               <label className="mb-[14px] text-[13px] font-medium text-black">
                 Password<span className="text-[#FE696A]">*</span>
               </label>
@@ -66,6 +65,35 @@ const SignUp = () => {
                 placeholder="Enter password "
                 className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
+            </div>
+
+            <div className="mb-6 flex gap-[65px]">
+              <div className="w-full">
+                <label className="mb-2 text-[13px] font-medium text-grey">
+                  Date of Birth<span className="text-[#FE696A]">*</span>
+                </label>
+                <input
+                  type="date"
+                  placeholder="dd - mm - yyyy"
+                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
+                />
+              </div>
+              <div className="w-full">
+                <label className="mb-2 text-[13px] font-medium text-grey">
+                  Gender<span className="text-[#FE696A]">*</span>
+                </label>
+                <select
+                  className="w-full border-[0.5px] border-[#4B515580] py-4 pl-5 text-[#4B515559] text-sm font-normal outline-none "
+                  name=""
+                  id=""
+                >
+                  <option value="" disabled selected>
+                    Gender
+                  </option>{" "}
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+              </div>
             </div>
 
             <div className="w-full">
@@ -81,13 +109,13 @@ const SignUp = () => {
 
             <div>
               <div>
-                <input type="checkbox" />
+                <input type="radio" />
                 <label className="text-[13px] font-light text-black" htmlFor="">
                   I am a Student
                 </label>
               </div>
               <div>
-                <input type="checkbox" />
+                <input type="radio" />
                 <label className="text-[13px] font-light text-black" htmlFor="">
                   I am a Mentor
                 </label>
@@ -95,7 +123,7 @@ const SignUp = () => {
             </div>
 
             <div>
-              <input type="checkbox" />
+              <input type="radio" />
               <label className="text-xs font-normal text-black" htmlFor="">
                  I agree to the {" "}
                 <Link className="underline" href="/terms">

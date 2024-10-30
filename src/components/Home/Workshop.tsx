@@ -1,6 +1,6 @@
-import bigStock from "@/assets/Mentorze/bigStock.png"
+import bigStock from "@/assets/bigStock.png"
 import Image from "next/image";
-import profile from "@/assets/Mentorze/profile.png"
+import profile from "@/assets/profile.png"
 import { GoClock } from "react-icons/go";
 
 const Workshop = () => {

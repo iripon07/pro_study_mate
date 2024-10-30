@@ -1,8 +1,8 @@
 import Image from "next/image";
-import mentor from "@/assets/Mentorze/Mentor.png";
-import right from "@/assets/Mentorze/right.png";
-import rightArrow from "@/assets/Mentorze/rightArrow.png";
-import Review from "@/assets/Mentorze/Review.png";
+import mentor from "@/assets/Mentor.png";
+import right from "@/assets/right.png";
+import rightArrow from "@/assets/rightArrow.png";
+import Review from "@/assets/Review.png";
 
 const Mentor = () => {
   return (
@@ -15,6 +15,7 @@ const Mentor = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-[83px]">
+
         <div className="rounded-t-[20px]">
           <Image
             className="w-full"
@@ -45,7 +46,7 @@ const Mentor = () => {
             <p className="text-[40px] font-bold text-darkBlue">$30</p>
           </div>
 
-          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white">
+          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white hover:opacity-80">
             Book me for your task
             <Image src={rightArrow} alt="Right Arrow"></Image>
           </button>
@@ -81,7 +82,7 @@ const Mentor = () => {
             <p className="text-[40px] font-bold text-darkBlue">$30</p>
           </div>
 
-          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white">
+          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white hover:opacity-80">
             Book me for your task
             <Image src={rightArrow} alt="Right Arrow"></Image>
           </button>
@@ -117,11 +118,12 @@ const Mentor = () => {
             <p className="text-[40px] font-bold text-darkBlue">$30</p>
           </div>
 
-          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white">
+          <button className="mt-6 flex w-full items-center justify-between bg-[#295FCC] px-10 py-1 text-xl font-semibold text-white hover:opacity-80">
             Book me for your task
             <Image src={rightArrow} alt="Right Arrow"></Image>
           </button>
         </div>
+        
       </div>
     </div>
   );

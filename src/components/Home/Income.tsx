@@ -1,6 +1,6 @@
-import servicePhoto from "@/assets/Mentorze/servicePhoto.png";
+import servicePhoto from "@/assets/servicePhoto.png";
 import Image from "next/image";
-import checkBox from "@/assets/Mentorze/checkBox.png"
+import checkBox from "@/assets/checkBox.png"
 
 const Income = () => {
   return (
@@ -41,7 +41,7 @@ const Income = () => {
               <p>Host paid events or workshops for additional income.</p>
             </div>
           </div>
-          <button className="mt-6 rounded-[5px] bg-[#FE696A] px-[37.5px] pl-3 py-[13.5px] text-xl font-semibold text-white">
+          <button className="mt-6 rounded-[5px] hover:opacity-80 text-center bg-[#FE696A] px-[37.5px]  py-[13.5px] text-xl font-semibold text-white">
             Read more
           </button>
         </div>

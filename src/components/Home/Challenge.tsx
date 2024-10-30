@@ -1,9 +1,9 @@
-import assignmentImage from "@/assets/Mentorze/Assignment.png";
-import courseImage from "@/assets/Mentorze/Course.png";
-import gridImage from "@/assets/Mentorze/Grid.png";
-import researchImage from "@/assets/Mentorze/Research.png";
-import skillImage from "@/assets/Mentorze/Skill.png";
-import umbrellaImage from "@/assets/Mentorze/Umbrella.png";
+import assignmentImage from "@/assets/Assignment.png";
+import courseImage from "@/assets/Course.png";
+import gridImage from "@/assets/Grid.png";
+import researchImage from "@/assets/Research.png";
+import skillImage from "@/assets/Skill.png";
+import umbrellaImage from "@/assets/Umbrella.png";
 import Image from "next/image";
 
 const Challenge = () => {
@@ -71,7 +71,7 @@ const Challenge = () => {
             <h6 className="text-base text-[#4B5155BF]">136788 listings</h6>
           </div>
         </div>
-        <button className="bg-[#29C51D] mt-6 text-xl font-semibold text-white rounded-[5px] py-[11px] px-8 block mx-auto">
+        <button className="bg-[#29C51D] hover:opacity-80 mt-6 text-xl font-semibold text-white rounded-[5px] py-[11px] px-8 block mx-auto">
           Post Your Challenge
         </button>
       </div>

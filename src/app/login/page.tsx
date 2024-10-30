@@ -1,18 +1,13 @@
-import emailIcon from "@/assets/emailIcon.png";
-import passwordIcon from "@/assets/passwordIcon.png";
+import facebook from "@/assets/facebook.png";
+import googleIcon from "@/assets/google.png";
 import Image from "next/image";
 import Link from "next/link";
-import facebook from "@/assets/Mentorze/facebook.png";
-import googleIcon from "@/assets/Mentorze/google.png";
-
 
 const Login = () => {
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-center">
-
-        <div className="bg-whiteSmoke w-[819px] rounded-[5px] px-[117px] py-11 font-poppins">
-
+        <div className="w-[819px] rounded-[5px] bg-whiteSmoke px-[117px] py-11 font-poppins">
           <div>
             <p className="text-center text-2xl font-semibold text-black">
               Sign in to Mentorze
@@ -46,12 +41,12 @@ const Login = () => {
             <input
               type="submit"
               value="SIGN IN NOW"
-              className="w-full rounded-[2px] cursor-pointer bg-[#FB6107] py-[10px] text-xl font-medium text-white"
+              className="w-full cursor-pointer rounded-[2px] bg-[#FB6107] py-[10px] text-xl font-medium text-white"
             />
           </form>
 
           <div className="my-[50px] grid grid-cols-2 gap-6 text-xs font-normal">
-            <div className="flex items-center justify-start rounded cursor-pointer bg-[#4585F4] pl-4 text-white">
+            <div className="flex cursor-pointer items-center justify-start rounded bg-[#4585F4] pl-4 text-white">
               <Image
                 className="mr-[5px]"
                 src={googleIcon}
@@ -59,7 +54,7 @@ const Login = () => {
               ></Image>
               <p className="py-[10px]">Sign in with Google</p>
             </div>
-            <div className="flex items-center cursor-pointer justify-start rounded border-[1px] border-primary pl-4 text-black">
+            <div className="flex cursor-pointer items-center justify-start rounded border-[1px] border-primary pl-4 text-black">
               <Image
                 className="mr-[10px]"
                 src={facebook}
@@ -85,7 +80,6 @@ const Login = () => {
               Forgot Password ?{" "}
             </Link>
           </div>
-          
         </div>
       </div>
     </div>
