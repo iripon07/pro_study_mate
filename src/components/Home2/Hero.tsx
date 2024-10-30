@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Circle from "@/assets/Circle.png";
-import HeroImage from "@/assets/StudentPlatform.png";
+import Circle from "@/assets/photos/Circle.png";
+import HeroImage from "@/assets/photos/StudentPlatform.png";
 
 const Hero = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Working from "@/assets/Working.png";
+import Working from "@/assets/photos/Working.png";
 
 const GetYourWork = () => {
   return (

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Assignment from "@/assets/Assignment.png";
-import Skill from "@/assets/Skill1.png";
-import Research from "@/assets/Research.png";
-import Exam from "@/assets/Exam.png";
-import World from "@/assets/World.png";
+import Assignment from "@/assets/photos/Assignment.png";
+import Skill from "@/assets/photos/Skill1.png";
+import Research from "@/assets/photos/Research.png";
+import Exam from "@/assets/photos/Exam.png";
+import World from "@/assets/photos/World.png";
 
 const StudyChallenge = () => {
   return (

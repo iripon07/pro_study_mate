@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Student from "@/assets/Student.png";
-import Workshop from "@/assets/Workshop.png";
+import Student from "@/assets/photos/Student.png";
+import Workshop from "@/assets/photos/Workshop.png";
 
 const Expertise = () => {
   return (
