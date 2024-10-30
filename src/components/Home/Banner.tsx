@@ -42,7 +42,7 @@ const Banner =() => {
               <Image
                 className="mr-2"
                 src={searchIcon}
-                alt="search"
+                alt="search icon set"
                 width={24}
                 height={24}
               ></Image>
