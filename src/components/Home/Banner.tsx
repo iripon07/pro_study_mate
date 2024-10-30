@@ -14,12 +14,10 @@ const Banner =() => {
         style={{
           backgroundImage: `url(${BannerImage.src})`,
           backgroundRepeat: "no-repeat",
-
         }}
       ></div>
 
       <div className="relative z-20 flex h-[500px] items-center px-8">
-        
         <div className="flex flex-col items-start">
           <p className="font-istok text-xl font-bold text-[#FB6107]">
             Get Started
@@ -47,7 +45,7 @@ const Banner =() => {
                 alt="search"
                 width={24}
                 height={24}
-              />{" "}
+              ></Image>
               Search
             </button>
           </div>
