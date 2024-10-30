@@ -1,5 +1,5 @@
 import BannerImage from "@/assets/bannerImage.png";
-import searchIcon from "@/assets/searchIcon.png";
+import searchIcon from "../../assets/searchIcon.png";
 import Image from "next/image";
 
 
