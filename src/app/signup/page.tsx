@@ -1,9 +1,21 @@
+"use client"
+
 import Link from "next/link";
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
 import Image from "next/image";
+import DateTimePicker from "react-datetime-picker";
+import { useState } from "react";
+import "react-datetime-picker/dist/DateTimePicker.css";
+import "react-calendar/dist/Calendar.css";
+import { FaCalendarAlt } from "react-icons/fa";
+
+
 
 const SignUp = () => {
+
+const [date, setDate] = useState<Date | null>(new Date());
+
   return (
     <div>
       <div className="container mx-auto">
@@ -72,18 +84,30 @@ const SignUp = () => {
                 <label className="mb-2 text-[13px] font-medium text-grey">
                   Date of Birth<span className="text-[#FE696A]">*</span>
                 </label>
-                <input
-                  type="date"
-                  placeholder="dd - mm - yyyy"
+
+                <DateTimePicker
                   className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
+                  onChange={setDate}
+                  value={date}
+                  clearIcon={null}
+                  disableClock={true}
+                  calendarIcon={<FaCalendarAlt className="text-grey"/>}
+                  format="dd/mm/yyyy"
                 />
+
+                {/* <input
+                  type="date"
+                  placeholder="dd/mm/yyyy"
+                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
+                /> */}
               </div>
+
               <div className="w-full">
                 <label className="mb-2 text-[13px] font-medium text-grey">
                   Gender<span className="text-[#FE696A]">*</span>
                 </label>
                 <select
-                  className="w-full border-[0.5px] border-[#4B515580] py-4 pl-5 text-[#4B515559] text-sm font-normal outline-none "
+                  className="w-full border-[0.5px] border-[#4B515580] py-4 pl-5 text-sm font-normal text-[#4B515559] outline-none"
                   name=""
                   id=""
                 >
@@ -133,7 +157,7 @@ const SignUp = () => {
             </div>
 
             <input
-              className="w-full rounded-sm bg-[#FB6107] py-[6px] text-[25px] font-medium text-white"
+              className="w-full rounded-sm bg-[#FB6107] py-[6px] text-[25px] font-medium text-white hover:opacity-80"
               type="submit"
               value="Continue"
             />

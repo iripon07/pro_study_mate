@@ -1,9 +1,35 @@
+"use client"
+
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
+import { loginSchema } from "@/components/schemas/loginValidation";
+import { yupResolver } from "@hookform/resolvers/yup";
 import Image from "next/image";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+
+
+interface ILoginData  {
+  email:string 
+  password:string
+};
+
 
 const Login = () => {
+   const {
+     register,
+     handleSubmit,
+     reset,
+     formState: { errors },
+   } = useForm<ILoginData>({
+     resolver: yupResolver(loginSchema),
+   });
+
+   const onSubmit = (data: ILoginData) => {
+    console.log('Hello Login Data', data);
+    reset()
+   };
+
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-center">
@@ -16,16 +42,20 @@ const Login = () => {
             <div className="mx-auto mb-[60px] mt-4 w-[125.1px] border-2 border-[#FB6107]" />
           </div>
 
-          <form action="" className="w-full">
+          <form onSubmit={handleSubmit(onSubmit)} className="w-full">
             <div className="">
               <label className="mb-[10px] text-base font-light text-black">
                 Email address *
               </label>
               <input
                 type="email"
+                {...register("email")}
                 placeholder="Enter email address"
                 className="w-full rounded-[2px] border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
+              {errors?.email && (
+                <p className="text-red text-xs">{errors.email.message}</p>
+              )}
             </div>
             <div className="my-6">
               <label className="mb-[10px] text-base font-light text-black">
@@ -33,9 +63,13 @@ const Login = () => {
               </label>
               <input
                 type="password"
+                {...register("password")}
                 placeholder="Enter password "
                 className="w-full rounded-[2px] border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
               />
+              {errors?.password && (
+                <p className="text-red text-xs">{errors.password.message}</p>
+              )}
             </div>
 
             <input
