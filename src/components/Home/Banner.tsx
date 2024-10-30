@@ -1,6 +1,7 @@
 import BannerImage from "@/assets/bannerImage.png";
 import searchIcon from "../../assets/searchIcon.png";
 import Image from "next/image";
+import { FaSearchPlus } from "react-icons/fa";
 
 
 const Banner =() => {
@@ -39,13 +40,7 @@ const Banner =() => {
               className="w-full py-3 pl-6 outline-none"
             />
             <button className="flex items-center rounded-r bg-[#FE696A] px-6 py-3 font-poppins text-xl font-semibold text-white">
-              <Image
-                className="mr-2"
-                src={searchIcon}
-                alt="search icon set"
-                width={24}
-                height={24}
-              ></Image>
+              <FaSearchPlus className="mr-2"/>
               Search
             </button>
           </div>
