@@ -4,11 +4,10 @@ import { FaSearchPlus } from "react-icons/fa";
 const Banner = () => {
   return (
     <div
-      style={{ border: "2px solid red" }}
       className="container relative mx-auto"
     >
       <div
-        className="absolute h-full w-full border-2 border-green-600 bg-right"
+        className="absolute h-full w-full bg-right"
         style={{
           backgroundImage: `url(${BannerImage.src})`,
           backgroundRepeat: "no-repeat",
