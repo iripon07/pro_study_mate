@@ -4,49 +4,73 @@ import checkBox from "@/assets/checkBox.png"
 
 const Income = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-4 my-6">
       <div className="flex">
-        <div className="py-9 pl-9">
-          <p className="mb-4 pl-2 text-2xl font-normal text-grey">
+        <div className="py-0 pl-0 md:py-9 md:pl-9">
+          <p className="mb-[3px] pl-0 text-2xs font-normal text-grey md:mb-4 md:pl-2 2xl:text-2xl">
             Want to earn money
           </p>
-          <p className="mb-6 text-[40px] font-semibold text-black">
+          <p className="mb-[6px] text-xl font-semibold text-black md:mb-6 md:text-2xl lg:text-3xl xl:text-[40px]">
             Turn expertise into income
           </p>
-          <p className="mb-7 text-xl pl-5 font-light text-black">
+          <p className="mb-5 pl-0 text-[8px] font-light text-black md:mb-7 md:pl-5 md:text-base xl:text-xl">
             Mentors earn money by helping students with assignments, course
             lessons, or skills. They apply to tasks, set their rates, and get
             paid once the work is done. They can also host paid events or
             workshops, offering expertise while earning income.
           </p>
-          <div className="mb-6">
-            <p className="text-2xl font-semibold text-grey">Key Points</p>
+          <div className="md:mb-6 mb-3">
+            <p className="text-sm font-semibold text-grey md:text-base lg:text-xl xl:text-2xl">
+              Key Points
+            </p>
           </div>
 
-          <div className="space-y-3 text-xl font-normal text-grey pl-2">
+          <div className="md:space-y-3 space-y-[10px] pl-2 text-[8px] font-normal text-grey md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             <div className="flex items-center">
-              <Image className="mr-2" src={checkBox} alt="CHeck box"></Image>
+              <Image
+                className="mr-3 h-3 w-3 md:h-[22px] md:w-[22px]"
+                src={checkBox}
+                alt="CHeck box"
+              ></Image>
               <p>Host paid events or workshops for additional income.</p>
             </div>
             <div className="flex items-center">
-              <Image className="mr-2" src={checkBox} alt="CHeck box"></Image>
+              <Image
+                className="mr-3 h-3 w-3 md:h-[22px] md:w-[22px]"
+                src={checkBox}
+                alt="CHeck box"
+              ></Image>
               <p>Apply to tasks and set your own rates.</p>
             </div>
             <div className="flex items-center">
-              <Image className="mr-2" src={checkBox} alt="CHeck box"></Image>
+              <Image
+                className="mr-3 h-3 w-3 md:h-[22px] md:w-[22px]"
+                src={checkBox}
+                alt="CHeck box"
+              ></Image>
               <p>Get paid after completing the task.</p>
             </div>
             <div className="flex items-center">
-              <Image className="mr-2" src={checkBox} alt="CHeck box"></Image>
+              <Image
+                className="mr-3 h-3 w-3 md:h-[22px] md:w-[22px]"
+                src={checkBox}
+                alt="CHeck box"
+              ></Image>
               <p>Host paid events or workshops for additional income.</p>
             </div>
           </div>
-          <button className="mt-6 rounded-[5px] hover:opacity-80 text-center bg-[#FE696A] px-[37.5px]  py-[13.5px] text-xl font-semibold text-white">
+          <button className="md:mt-6 mt-5 rounded-[5px] bg-[#FE696A] md:px-[37.5px] px-3 md:py-[13.5px] py-[3px]  text-center md:text-xl text-2xs font-semibold text-white hover:opacity-80">
             Read more
           </button>
         </div>
-        <div  className="w-full -mt-5">
-          <Image className="w-full" src={servicePhoto} quality={100} alt="Service"></Image>
+
+        <div className="-mt-5 hidden w-full md:block">
+          <Image
+            className="w-full"
+            src={servicePhoto}
+            quality={100}
+            alt="Service"
+          ></Image>
         </div>
       </div>
     </div>
