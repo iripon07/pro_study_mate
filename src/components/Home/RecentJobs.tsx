@@ -3,16 +3,16 @@
 const RecentJobs = () => {
   return (
     <div className="bg-[#242425]">
-      <div className="container mx-auto pb-[38px] pt-[31px]">
+      <div className="container mx-auto pb-[38px] pt-[31px] px-4">
         <div className="text-white">
-          <p className="mb-4 text-[40px] font-semibold">Recent Jobs</p>
-          <p className="mb-11 text-xl font-normal">
+          <p className="mb-4 xl:text-[40px] lg:text-3xl text-2xl  font-semibold">Recent Jobs</p>
+          <p className="lg:mb-11 mb-6 xl:text-xl md:text-lg text-base font-normal">
             Discover the Latest Opportunities to Showcase Your Expertise and
             Help Students Achieve Their Goals
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-[29px] gap-y-[65px]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-x-[29px] gap-6 lg:gap-y-[65px]">
 
           <div className="rounded-xl bg-white pb-[5px] pl-10 pr-8 pt-2 shadow-[0px_5px_15px_2px_#00000026]">
             <div className="flex items-center justify-between">
