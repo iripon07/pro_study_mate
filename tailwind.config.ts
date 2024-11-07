@@ -20,6 +20,7 @@ const config: Config = {
         black: "#000000",
         red: "#FA171B",
         whiteSmoke: "#F5F5F5",
+        silver: "#B3B3B3",
       },
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"],
@@ -32,7 +33,6 @@ const config: Config = {
       fontSize: {
         "2xs": "10px",
       },
-    
     },
   },
   plugins: [],

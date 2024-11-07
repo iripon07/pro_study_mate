@@ -4,17 +4,16 @@ import Link from "next/link";
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
 import Image from "next/image";
-import DateTimePicker from "react-datetime-picker";
 import { useState } from "react";
-import "react-datetime-picker/dist/DateTimePicker.css";
-import "react-calendar/dist/Calendar.css";
 import { FaCalendarAlt } from "react-icons/fa";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
 const SignUp = () => {
 
-const [date, setDate] = useState<Date | null>(new Date());
+const [selectedDate, setSelectedDate] = useState<Date | null>(null);
 
   return (
     <div>
@@ -52,7 +51,7 @@ const [date, setDate] = useState<Date | null>(new Date());
                 <input
                   type="text"
                   placeholder="Enter last name"
-                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
                 />
               </div>
             </div>
@@ -64,7 +63,7 @@ const [date, setDate] = useState<Date | null>(new Date());
               <input
                 type="text"
                 placeholder="Enter email"
-                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
               />
             </div>
 
@@ -81,19 +80,25 @@ const [date, setDate] = useState<Date | null>(new Date());
 
             <div className="mb-6 flex gap-[65px]">
               <div className="w-full">
-                <label className="mb-2 text-[13px] font-medium text-grey">
+                <label className="mb-2 block text-[13px] font-medium text-grey">
                   Date of Birth<span className="text-[#FE696A]">*</span>
                 </label>
-
-                <DateTimePicker
-                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
+                <DatePicker
+                  selected={selectedDate}
+                  onChange={(date: Date | null) => setSelectedDate(date)}
+                  dateFormat="dd/MM/yyyy" // Customize the format
+                  placeholderText="dd - mm - yyyy"
+                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#283d4a59] outline-gray-400"
+                />
+                {/* <DateTimePicker
+                  className="w-full appearance-none rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
                   onChange={setDate}
                   value={date}
                   clearIcon={null}
                   disableClock={true}
-                  calendarIcon={<FaCalendarAlt className="text-grey"/>}
+                  calendarIcon={<FaCalendarAlt className="text-grey" />}
                   format="dd/mm/yyyy"
-                />
+                /> */}
 
                 {/* <input
                   type="date"
@@ -127,7 +132,7 @@ const [date, setDate] = useState<Date | null>(new Date());
               <input
                 type="text"
                 placeholder="Masters of computer science"
-                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
+                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
               />
             </div>
 
@@ -147,7 +152,10 @@ const [date, setDate] = useState<Date | null>(new Date());
             </div>
 
             <div>
-              <input type="radio" />
+              <input
+                type="radio"
+                className="h-4 w-4 appearance-none rounded-full border-2 border-[#4B515559]"
+              />
               <label className="text-xs font-normal text-black" htmlFor="">
                  I agree to the {" "}
                 <Link className="underline" href="/terms">

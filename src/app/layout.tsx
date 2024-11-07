@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${istok.variable} ${prostoOne.variable} ${nothingYouCouldDo.variable} ${rajdhani.variable} ${alkatra.variable} antialiased`}
+        className={` ${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${istok.variable} ${prostoOne.variable} ${nothingYouCouldDo.variable} ${rajdhani.variable} ${alkatra.variable} antialiased`}
       >
         <Header />
         {children}
