@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <div className="bg-white">
         <div className="container mx-auto mt-[128px]">
-          <div className="flex items-center justify-between">
+          <div className="grid xl:grid-cols-4 grid-cols-1 mx-auto">
             <div>
               <Image src={Mentorze} alt="Mentorze" quality={100}></Image>
             </div>
@@ -56,7 +56,7 @@ const Footer = () => {
 
       <div className="bg-[#242425]">
         <div className="container mx-auto">
-          <p className="py-[18px] text-center text-2xl font-normal text-white">
+          <p className="py-[18px] text-center xl:text-2xl md:text-lg text-base font-normal text-white">
             Copyright 2021 © Mentorze.com, All Rights Reserved.
           </p>
         </div>
