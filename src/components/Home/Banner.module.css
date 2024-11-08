@@ -1,0 +1,12 @@
+.bannerContainer {
+  background-image: url("../../assets/bannerImage.png");
+  background-repeat: "no-repeat";
+  background-size: "50% cover";
+  background-position: "right center";
+}
+
+@media (max-width: 640px) {
+  .bannerContainer {
+    background-image: none !important;
+  }
+}
