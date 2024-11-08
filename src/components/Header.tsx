@@ -88,6 +88,8 @@ const Header = () => {
         </div>
       </div>
 
+
+
       <div
         style={{ border: "1px solid green" }}
         className="container mx-auto block md:hidden"
@@ -121,7 +123,7 @@ const Header = () => {
           </div>
 
           <div
-            className={`absolute flex w-full flex-col bg-primary text-xl font-semibold text-white duration-300 ${open ? "top-[68px]" : "-top-[150px]"} `}
+            className={`absolute flex w-full flex-col bg-primary text-xl z-50 font-semibold text-white duration-300 ${open ? "top-[68px]" : "-top-[150px]"} `}
           >
             <Link
               className="border-b-[1px] border-white py-2 text-center"

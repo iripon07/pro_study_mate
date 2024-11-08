@@ -61,7 +61,7 @@ const [selectedDate, setSelectedDate] = useState<Date | null>(null);
                 Email<span className="text-[#FE696A]">*</span>
               </label>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter email"
                 className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
               />
