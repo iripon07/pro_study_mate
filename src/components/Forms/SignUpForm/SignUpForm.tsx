@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import Input from "../Input/Input";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
 
 const SignUpForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -59,15 +61,14 @@ const SignUpForm = () => {
       </div>
 
       <div className="mb-6 flex gap-[65px]">
-        <div  className="w-full">
+        <div className="w-full">
           <label className="mb-[14px] text-[13px] font-medium text-black">
             Date of Birth<span className="text-[#FE696A]">*</span>
           </label>
           <DatePicker />
         </div>
 
-        <div  className="w-full">
-          
+        <div className="w-full">
           <label className="mb-[14px] text-[13px] font-medium text-black">
             Gender<span className="text-[#FE696A]">*</span>
           </label>
@@ -91,7 +92,55 @@ const SignUpForm = () => {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="mb-[14px] flex gap-6">
+        <div className="w-full">
+          <label className="mb-[14px] text-[13px] font-medium text-black">
+            Gender<span className="text-[#FE696A]">*</span>
+          </label>
+
+          <div className="relative w-full">
+            <select
+              className="w-full appearance-none rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Gender
+              </option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+
+            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+              <FaChevronDown />
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full">
+          <label className="mb-2 text-[13px] font-medium text-grey">
+            Your University or Institution
+            <span className="text-[#FA171B]"> *</span>
+          </label>
+          <div className="relative w-full">
+            <select
+              className="w-full appearance-none rounded-sm border-[1px] border-[#B3B3B3] px-6 py-[14px] text-sm font-light text-[#4B515559] outline-gray-400"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                University Name
+              </option>
+              <option value="X">X</option>
+              <option value="Y">Y</option>
+            </select>
+
+            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">
+              <FaChevronDown />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-10 w-full">
         <label className="mb-[13px] text-[13px] font-semibold text-black">
           Course Name<span className="text-[#FE696A]">*</span>
         </label>
@@ -102,20 +151,34 @@ const SignUpForm = () => {
         />
       </div>
 
-      {/* <div>
-              <div>
-                <input type="radio" />
-                <label className="text-[13px] font-light text-black" htmlFor="">
-                  I am a Student
-                </label>
-              </div>
-              <div>
-                <input type="radio" />
-                <label className="text-[13px] font-light text-black" htmlFor="">
-                  I am a Mentor
-                </label>
-              </div>
-            </div> */}
+      <div className="flex gap-x-20">
+        <div className="flex items-center space-x-3">
+          {/* Radio Button */}
+          <label className="flex items-center">
+            <input
+              type="radio"
+              name="role"
+              className="peer hidden" // Hides the native input
+            />
+            <div className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-gray-300 peer-checked:border-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500">
+              <div className="h-3 w-3 scale-0 rounded-full bg-orange-500 transition-transform peer-checked:scale-100"></div>
+            </div>
+            <span className="ml-2 text-sm text-black">I am a Student</span>
+          </label>
+        </div>
+
+        <RadioGroup defaultValue="option-one">
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem className="bg-red" value="option-one" id="option-one" />
+            <Label htmlFor="option-one">I am a Student</Label>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-two" id="option-two" />
+            <Label htmlFor="option-two">I am a Mentor</Label>
+          </div>
+        </RadioGroup>
+      </div>
 
       <div>
         <input
