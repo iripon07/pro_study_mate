@@ -1,20 +1,13 @@
-"use client"
+"use client";
 
-import Link from "next/link";
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
+import SignUpForm from "@/components/Forms/SignUpForm/SignUpForm";
 import Image from "next/image";
-import { useState } from "react";
-import { FaCalendarAlt } from "react-icons/fa";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-
+import Link from "next/link";
 
 
 const SignUp = () => {
-
-const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-
   return (
     <div>
       <div className="container mx-auto">
@@ -31,145 +24,7 @@ const [selectedDate, setSelectedDate] = useState<Date | null>(null);
             </p>
           </div>
 
-          <form>
-            <div className="mb-6 flex gap-[37px]">
-              <div className="w-full">
-                <label className="mb-[14px] text-[13px] font-medium text-black">
-                  First Name<span className="text-[#FE696A]">*</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter first name"
-                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
-                />
-              </div>
-
-              <div className="w-full">
-                <label className="mb-[14px] text-[13px] font-medium text-black">
-                  First Name<span className="text-[#FE696A]">*</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter last name"
-                  className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
-                />
-              </div>
-            </div>
-
-            <div className="mb-[14px] w-full">
-              <label className="mb-[14px] text-[13px] font-medium text-black">
-                Email<span className="text-[#FE696A]">*</span>
-              </label>
-              <input
-                type="email"
-                placeholder="Enter email"
-                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
-              />
-            </div>
-
-            <div className="mb-2 w-full">
-              <label className="mb-[14px] text-[13px] font-medium text-black">
-                Password<span className="text-[#FE696A]">*</span>
-              </label>
-              <input
-                type="password"
-                placeholder="Enter password "
-                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-none"
-              />
-            </div>
-
-            <div className="mb-6 flex gap-[65px]">
-              <div className="w-full">
-                <label className="mb-2 block text-[13px] font-medium text-grey">
-                  Date of Birth<span className="text-[#FE696A]">*</span>
-                </label>
-                <DatePicker
-                  selected={selectedDate}
-                  onChange={(date: Date | null) => setSelectedDate(date)}
-                  dateFormat="dd/MM/yyyy" // Customize the format
-                  placeholderText="dd - mm - yyyy"
-                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#283d4a59] outline-gray-400"
-                />
-                {/* <DateTimePicker
-                  className="w-full appearance-none rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
-                  onChange={setDate}
-                  value={date}
-                  clearIcon={null}
-                  disableClock={true}
-                  calendarIcon={<FaCalendarAlt className="text-grey" />}
-                  format="dd/mm/yyyy"
-                /> */}
-
-                {/* <input
-                  type="date"
-                  placeholder="dd/mm/yyyy"
-                  className="w-full rounded-sm border-[1px] border-[#4B515580] py-[14px] pl-[13px] text-sm font-light text-[#4B515559] outline-none"
-                /> */}
-              </div>
-
-              <div className="w-full">
-                <label className="mb-2 text-[13px] font-medium text-grey">
-                  Gender<span className="text-[#FE696A]">*</span>
-                </label>
-                <select
-                  className="w-full border-[0.5px] border-[#4B515580] py-4 pl-5 text-sm font-normal text-[#4B515559] outline-none"
-                  name=""
-                  id=""
-                >
-                  <option value="" disabled selected>
-                    Gender
-                  </option>{" "}
-                  <option value="">Male</option>
-                  <option value="">Female</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <label className="mb-[14px] text-[13px] font-semibold text-black">
-                Course Name<span className="text-[#FE696A]">*</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Masters of computer science"
-                className="w-full rounded-sm border-[1px] border-[#B3B3B3] py-[14px] pl-[13px] text-base font-light text-[#B3B3B3] outline-gray-400"
-              />
-            </div>
-
-            <div>
-              <div>
-                <input type="radio" />
-                <label className="text-[13px] font-light text-black" htmlFor="">
-                  I am a Student
-                </label>
-              </div>
-              <div>
-                <input type="radio" />
-                <label className="text-[13px] font-light text-black" htmlFor="">
-                  I am a Mentor
-                </label>
-              </div>
-            </div>
-
-            <div>
-              <input
-                type="radio"
-                className="h-4 w-4 appearance-none rounded-full border-2 border-[#4B515559]"
-              />
-              <label className="text-xs font-normal text-black" htmlFor="">
-                 I agree to the {" "}
-                <Link className="underline" href="/terms">
-                  Terms and Conditions
-                </Link>
-              </label>
-            </div>
-
-            <input
-              className="w-full rounded-sm bg-[#FB6107] py-[6px] text-[25px] font-medium text-white hover:opacity-80"
-              type="submit"
-              value="Continue"
-            />
-          </form>
+          <SignUpForm />
 
           <div className="my-[50px] grid grid-cols-2 gap-6 text-xs font-normal">
             <div className="flex cursor-pointer items-center justify-start rounded bg-[#4585F4] pl-4 text-white">
