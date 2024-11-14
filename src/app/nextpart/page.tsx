@@ -5,6 +5,9 @@ import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
 import Image from "next/image";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
+
 
 const NextPart = () => {
   return (
@@ -27,46 +30,55 @@ const NextPart = () => {
             <div className="mb-[46px] w-full">
               <label className="mb-2 text-[13px] font-medium text-[#4B5155]">
                 Universities You’ll Mentor
-                <span className="text-[#FB6107]">*</span>
               </label>
-
-              <div className="relative">
+              <div className="relative w-full">
                 <select
-                  className="text-silver pointer-events:none w-full appearance-none rounded border-[0.5px] border-[#4B515580] px-4 py-[15px] text-[13px] font-medium outline-none"
-                  name=""
-                  id=""
+                  className="w-full appearance-none rounded-sm border-[1px] border-[#B3B3B3] px-6 py-4 text-sm font-light text-[#4B515559] outline-gray-400"
+                  defaultValue=""
                 >
-                  <option value="" disabled selected>
-                    Choose your nationality
-                  </option>{" "}
-                  <option value="">Male</option>
-                  <option value="">Female</option>
+                  <option value="" disabled>
+                    University Name
+                  </option>
+                  <option value="X">X</option>
+                  <option value="Y">Y</option>
+                  <option value="Y">Y</option>
                 </select>
-                <Image
-                  className="absolute right-0 top-3"
-                  width={28}
-                  height={28}
-                  src={downArrow}
-                  alt="Down arrow"
-                ></Image>
+
+                <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#777777]">
+                  <FaChevronDown />
+                </div>
+              </div>
+
+              <div className="relative inline-block">
+                <button className="bg-[#F5F5F5] px-6 py-2 text-black text-[8px]">
+                  University Name
+                </button>
+                <IoCloseSharp className="absolute right-0 top-0 -translate-y-1/2 transform text-red" />
               </div>
             </div>
 
-            <div className="mb-[25px] w-full">
+            <div className="mb-[46px] w-full">
               <label className="mb-2 text-[13px] font-medium text-grey">
-                Choose your nationality<span className="text-[#FB6107]">*</span>
+                Choose your nationality
+                <span className="text-[#FB6107]"> *</span>
               </label>
-              <select
-                className="text-silver w-full rounded border-[0.5px] border-[#4B515580] px-4 py-[15px] text-[13px] font-medium outline-none"
-                name=""
-                id=""
-              >
-                <option value="" disabled selected>
-                  Choose your nationality
-                </option>{" "}
-                <option value="">Male</option>
-                <option value="">Female</option>
-              </select>
+              <div className="relative w-full">
+                <select
+                  className="w-full appearance-none rounded-sm border-[1px] border-[#B3B3B3] px-6 py-4 text-sm font-light text-[#4B515559] outline-gray-400"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Choose your nationality
+                  </option>
+                  <option value="X">X</option>
+                  <option value="Y">Y</option>
+                  <option value="Y">Y</option>
+                </select>
+
+                <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#777777]">
+                  <FaChevronDown />
+                </div>
+              </div>
             </div>
 
             <div className="w-full">
@@ -77,7 +89,7 @@ const NextPart = () => {
               <input
                 type="text"
                 placeholder="Enter Your Skilled Subject Areas "
-                className="text-silver w-full rounded border-[1px] border-[#B3B3B3] px-[16px] py-[15px] text-[13px] font-light outline-none"
+                className="w-full rounded border-[1px] border-[#B3B3B3] px-[16px] py-[15px] text-[13px] font-light text-silver outline-none"
               />
             </div>
 

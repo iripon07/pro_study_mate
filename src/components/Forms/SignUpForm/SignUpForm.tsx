@@ -152,24 +152,9 @@ const SignUpForm = () => {
       </div>
 
       <div className="flex gap-x-20">
-        <div className="flex items-center space-x-3">
-          {/* Radio Button */}
-          <label className="flex items-center">
-            <input
-              type="radio"
-              name="role"
-              className="peer hidden" // Hides the native input
-            />
-            <div className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-gray-300 peer-checked:border-orange-500 peer-checked:ring-2 peer-checked:ring-orange-500">
-              <div className="h-3 w-3 scale-0 rounded-full bg-orange-500 transition-transform peer-checked:scale-100"></div>
-            </div>
-            <span className="ml-2 text-sm text-black">I am a Student</span>
-          </label>
-        </div>
-
         <RadioGroup defaultValue="option-one">
           <div className="flex items-center space-x-2">
-            <RadioGroupItem className="bg-red" value="option-one" id="option-one" />
+            <RadioGroupItem value="option-one" id="option-one" />
             <Label htmlFor="option-one">I am a Student</Label>
           </div>
 
