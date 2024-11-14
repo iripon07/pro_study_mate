@@ -12,10 +12,10 @@ const NextPart = () => {
 
   return (
     <div>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-6">
 
         <div className="mx-auto my-14 max-w-[627px]">
-          
+
           <div className="mb-10 text-center">
             <p className="mb-6 text-[32px] font-semibold text-black">
               Let's create your account!
