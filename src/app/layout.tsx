@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import {
   Alkatra,
+  Inter,
   Istok_Web,
   Nothing_You_Could_Do,
   Poppins,
@@ -27,6 +28,12 @@ const prostoOne = Prosto_One({
   subsets: ["latin"],
   variable: "--font-prosto",
 });
+
+const inter = Inter({
+  weight:["300", "400", "500", "600", "700", "800"],
+  subsets:["latin"],
+  variable:"--font-inter"
+})
 
 const alkatra = Alkatra({
   weight: ["400"],
@@ -68,7 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${istok.variable} ${prostoOne.variable} ${nothingYouCouldDo.variable} ${rajdhani.variable} ${alkatra.variable} antialiased`}
+        className={` ${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${istok.variable} ${prostoOne.variable} ${inter.variable} ${nothingYouCouldDo.variable} ${rajdhani.variable} ${alkatra.variable} antialiased`}
       >
         <Header />
         {children}
