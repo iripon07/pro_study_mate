@@ -13,6 +13,7 @@ import { IoClipboardOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiGalleryLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
+import dynamic from "next/dynamic";
 
 const MentorProfile = () => {
   return (
@@ -274,4 +275,5 @@ const MentorProfile = () => {
   );
 };
 
-export default MentorProfile;
+
+export default dynamic(() => Promise.resolve(MentorProfile), { ssr: false });
