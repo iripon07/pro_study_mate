@@ -1,5 +1,6 @@
 "use client";
 
+import graduatedCap from "@/assets/graduatedCap.png";
 import MentorAvatar from "@/assets/MentorAvatar.png";
 import MentorWorkshop from "@/assets/MentorWorkshop.png";
 import Okay from "@/assets/Okay.png";
@@ -8,11 +9,10 @@ import Image from "next/image";
 import { CiCalendar, CiPaperplane } from "react-icons/ci";
 import { FaRegHeart, FaRegStar } from "react-icons/fa";
 import { GrWorkshop } from "react-icons/gr";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoClipboardOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiGalleryLine } from "react-icons/ri";
 import { TbWorld } from "react-icons/tb";
-import graduatedCap from "@/assets/graduatedCap.png"
 
 const MentorProfile = () => {
   return (
@@ -147,6 +147,34 @@ const MentorProfile = () => {
                 <p>University of Wollongong, Australia, </p>
                 <p>University of Wollongong, Australia, </p>
                 <p>University of Sydney</p>
+              </div>
+            </div>
+            <div className="mb-7 mt-[14px] bg-white p-2">
+              <div className="flex items-center justify-start gap-x-[6px]">
+                <IoClipboardOutline className="mr-2 h-[25px] w-7 text-black" />
+                <p className="font-prosto text-base font-medium text-[#1E1E1E]">
+                  My Expertise
+                </p>
+              </div>
+              <div className="mt-6 flex gap-x-4 font-prosto text-xs text-[#777777]">
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1 duration-300 hover:opacity-80">
+                  Subject name
+                </button>
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1">
+                  Subject name
+                </button>
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1">
+                  Subject name
+                </button>
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1">
+                  Subject name
+                </button>
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1">
+                  Subject name
+                </button>
+                <button className="rounded-sm bg-[#E9EBED] px-3 py-1">
+                  Subject name
+                </button>
               </div>
             </div>
           </div>
