@@ -47,6 +47,9 @@ const StudentAdminAllTasks = () => {
               <p className="text-black underline">My Task </p>
               <p className="text-silver">Workshop</p>
             </div>
+            <div className="bg-white">
+
+            </div>
           </div>
         </div>
       </div>
