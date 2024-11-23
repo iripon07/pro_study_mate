@@ -3,6 +3,7 @@
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
 import SignUpForm from "@/components/Forms/SignUpForm/SignUpForm";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -93,4 +94,5 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+
+export default dynamic(() => Promise.resolve(SignUp), { ssr: false });

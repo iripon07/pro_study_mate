@@ -181,7 +181,7 @@ const MentorProfile = () => {
           </div>
 
           <div className="col-span-5 w-full">
-            <p className="text-base font-medium text-black">
+            <p className="text-base mb-4 font-poppins mt-3 font-medium text-black">
               Up Coming Workshop
             </p>
 

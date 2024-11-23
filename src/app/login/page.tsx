@@ -4,6 +4,7 @@ import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
 import { loginSchema } from "@/components/schemas/loginValidation";
 import { yupResolver } from "@hookform/resolvers/yup";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";import { FaAngleDoubleRight } from "react-icons/fa";
@@ -121,4 +122,5 @@ const Login = () => {
   );
 };
 
-export default Login;
+
+export default dynamic(() => Promise.resolve(Login), { ssr: false });

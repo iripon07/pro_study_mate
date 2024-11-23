@@ -2,6 +2,7 @@
 
 import facebook from "@/assets/facebook.png";
 import googleIcon from "@/assets/google.png";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
@@ -228,4 +229,5 @@ const NextPart = () => {
   );
 };
 
-export default NextPart;
+
+export default dynamic(() => Promise.resolve(NextPart), { ssr: false });
