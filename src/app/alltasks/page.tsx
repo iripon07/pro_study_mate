@@ -12,7 +12,8 @@ const AllTasks = () => {
         </p>
       </div>
 
-      <div className="bg-[#F5F5F5] grid grid-cols-2 gap-y-[37px] gap-x-[29px]">
+      <div className="bg-[#F5F5F5] grid grid-cols-2 gap-y-[37px] gap-x-[29px] px-6 py-16">
+        
         <div className="rounded-xl bg-white pb-[5px] pl-10 pr-8 pt-2 shadow-[0px_5px_15px_2px_#00000026]">
           <div className="flex items-center justify-between">
             <p className="text-xs font-normal text-[#777777]">
