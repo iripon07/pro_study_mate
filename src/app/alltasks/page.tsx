@@ -1,19 +1,41 @@
 import React from "react";
+import { FaFilter, FaSearch } from "react-icons/fa";
+import { IoSearchOutline } from "react-icons/io5";import { FiFilter } from "react-icons/fi";
+import { LuFilter } from "react-icons/lu";
 
 const AllTasks = () => {
   return (
     <div className="container mx-auto font-poppins">
-      <div>
-        <p className="mb-[2px] text-[32px] font-medium text-black">
-          What are you looking For?
-        </p>
-        <p className="text-base font-light text-grey">
-          Search by keywords, mentor, location, university & filters
-        </p>
+      <div className="p-6">
+        <div>
+          <p className="mb-[2px] text-[32px] font-medium text-black">
+            What are you looking For?
+          </p>
+          <p className="text-base font-light text-grey">
+            Search by keywords, mentor, location, university & filters
+          </p>
+        </div>
+
+        <div className="mt-[26px] flex lg:w-[60%] w-full items-center gap-6">
+          <div className="flex w-full items-center rounded-md border border-silver px-6 text-base text-silver">
+            <input
+              type="text"
+              placeholder="Search by keywords, mentor, location, university..."
+              className="w-full py-3 outline-none"
+            />
+
+            <IoSearchOutline className="h-6 w-6" />
+          </div>
+
+          <button className="flex items-center rounded-[5px] bg-[#EC221F] px-4 py-2 text-xl font-medium text-white">
+           
+            <LuFilter className="h-8 w-8 mr-5" />
+            Filter
+          </button>
+        </div>
       </div>
 
-      <div className="bg-[#F5F5F5] grid grid-cols-2 gap-y-[37px] gap-x-[29px] px-6 py-16">
-        
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-x-[29px] gap-y-[37px] px-6 py-16">
         <div className="rounded-xl bg-white pb-[5px] pl-10 pr-8 pt-2 shadow-[0px_5px_15px_2px_#00000026]">
           <div className="flex items-center justify-between">
             <p className="text-xs font-normal text-[#777777]">
