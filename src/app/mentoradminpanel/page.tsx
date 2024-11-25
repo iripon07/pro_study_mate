@@ -3,8 +3,11 @@ import image2 from "@/assets/2.png";
 import image3 from "@/assets/3.png";
 import image4 from "@/assets/4.png";
 import image5 from "@/assets/5.png";
-import Image from "next/image";
 import image6 from "@/assets/6.png";
+import MentorWorkshop from "@/assets/MentorWorkshop.png";
+import Okay from "@/assets/Okay.png";
+import Review from "@/assets/Review.png";
+import Image from "next/image";
 import { CiPaperplane } from "react-icons/ci";
 
 const MentorAdminPanel = () => {
@@ -46,8 +49,6 @@ const MentorAdminPanel = () => {
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-x-5">
-
-
           <div>
             <div className="mb-[11px] flex items-center justify-between">
               <p className="text-xl font-medium text-black">
@@ -103,7 +104,7 @@ const MentorAdminPanel = () => {
                     alt="image 6"
                     className="mx-auto mb-[18px] h-12 w-12"
                   />
-                  <button className="flex items-center justify-center hover:opacity-80 duration-300 ease-in-out rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white">
+                  <button className="flex items-center justify-center rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white duration-300 ease-in-out hover:opacity-80">
                     <CiPaperplane className="mr-3 text-xl" />
                     Chat
                   </button>
@@ -278,8 +279,216 @@ const MentorAdminPanel = () => {
               </div>
             </div>
           </div>
+        </div>
 
+        <div className="mt-6 grid grid-cols-2 gap-x-5">
+          <div>
+            <div className="mb-[11px] flex items-center justify-between">
+              <p className="text-xl font-medium text-black">Active Workshop</p>
+              <p className="text-[15px] font-normal text-[#777777]">View all</p>
+            </div>
 
+            <div className="flex flex-col gap-y-8">
+                
+              <div className="mb-4 flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
+                <Image src={MentorWorkshop} alt="Mentor Workshop" />
+
+                <div className="flex w-full justify-between">
+                  <div>
+                    <p className="mb-2 text-2xs text-[#C55818]">
+                      SUN NOV 3,2024, 12.30 PM
+                    </p>
+                    <div>
+                      <p className="text-xs text-black">
+                        CSE 101 Workshop: Exam Topic Cover
+                      </p>
+                      <p>$30</p>
+                    </div>
+                    <p className="text-2xs text-[#4B5155BF]">
+                      Organised by: Riaz Uddin
+                    </p>
+
+                    <Image src={Review} alt="Review" />
+                    <div className="flex items-center gap-[11px]">
+                      <Image
+                        src={Okay}
+                        alt="Okay"
+                        className="h-[18px] w-[18px]"
+                      />
+                      <p className="text-2xs text-[#4B5155BF]">
+                        5 Students Booked
+                      </p>
+                    </div>
+                  </div>
+                  <div className="grid grid-rows-[1fr_auto] p-4">
+                    <div>
+                      <p className="font-prosto text-xs text-black">$30</p>
+                    </div>
+                    <button className="font-poppins text-xs font-medium text-[#098C00] duration-300 hover:opacity-80">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-4 flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
+                <Image src={MentorWorkshop} alt="Mentor Workshop" />
+
+                <div className="flex w-full justify-between">
+                  <div>
+                    <p className="mb-2 text-2xs text-[#C55818]">
+                      SUN NOV 3,2024, 12.30 PM
+                    </p>
+                    <div>
+                      <p className="text-xs text-black">
+                        CSE 101 Workshop: Exam Topic Cover
+                      </p>
+                      <p>$30</p>
+                    </div>
+                    <p className="text-2xs text-[#4B5155BF]">
+                      Organised by: Riaz Uddin
+                    </p>
+
+                    <Image src={Review} alt="Review" />
+                    <div className="flex items-center gap-[11px]">
+                      <Image
+                        src={Okay}
+                        alt="Okay"
+                        className="h-[18px] w-[18px]"
+                      />
+                      <p className="text-2xs text-[#4B5155BF]">
+                        5 Students Booked
+                      </p>
+                    </div>
+                  </div>
+                  <div className="grid grid-rows-[1fr_auto] p-4">
+                    <div>
+                      <p className="font-prosto text-xs text-black">$30</p>
+                    </div>
+                    <button className="font-poppins text-xs font-medium text-[#098C00] duration-300 hover:opacity-80">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-[11px] flex items-center justify-between">
+              <p className="text-xl font-medium text-black">
+                Recommended for you
+              </p>
+              <p className="text-[15px] font-normal text-[#777777]">View all</p>
+            </div>
+
+            <div className="flex flex-col gap-y-8">
+              <div className="flex items-center justify-between rounded-sm bg-white px-3 py-2">
+                <div>
+                  <div className="mb-[18px]">
+                    <p className="mb-[2px] text-xs font-normal text-[#777777]">
+                      assignment help
+                    </p>
+                    <p className="text-base font-medium text-black">
+                      #CSCIT 445, Computer Vision , Assignment 1{" "}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between text-center">
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="">
+                  <Image
+                    src={image6}
+                    alt="image 6"
+                    className="mx-auto mb-[18px] h-12 w-12"
+                  />
+                  <button className="flex items-center justify-center rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white">
+                    <CiPaperplane className="mr-3 text-xl" />
+                    Chat
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between rounded-sm bg-white px-3 py-2">
+                <div>
+                  <div className="mb-[18px]">
+                    <p className="mb-[2px] text-xs font-normal text-[#777777]">
+                      assignment help
+                    </p>
+                    <p className="text-base font-medium text-black">
+                      #CSCIT 445, Computer Vision , Assignment 1{" "}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between text-center">
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-normal text-[#777777]">
+                        Expired on
+                      </p>
+                      <p className="text-[15px] font-medium text-black">
+                        07 Oct 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="">
+                  <Image
+                    src={image6}
+                    alt="image 6"
+                    className="mx-auto mb-[18px] h-12 w-12"
+                  />
+                  <button className="flex items-center justify-center rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white">
+                    <CiPaperplane className="mr-3 text-xl" />
+                    Chat
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
