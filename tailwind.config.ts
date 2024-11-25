@@ -28,6 +28,7 @@ const config: Config = {
         red: "#FA171B",
         whiteSmoke: "#F5F5F5",
         silver: "#B3B3B3",
+        luckyGrey:"#777777",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

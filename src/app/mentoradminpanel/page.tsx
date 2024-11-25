@@ -8,7 +8,8 @@ import MentorWorkshop from "@/assets/MentorWorkshop.png";
 import Okay from "@/assets/Okay.png";
 import Review from "@/assets/Review.png";
 import Image from "next/image";
-import { CiPaperplane } from "react-icons/ci";
+import { CiCalendar, CiPaperplane } from "react-icons/ci";
+import graduatedCap from "@/assets/graduatedCap.png"
 
 const MentorAdminPanel = () => {
   return (
@@ -281,7 +282,7 @@ const MentorAdminPanel = () => {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-x-5">
+        <div className="mt-12 grid grid-cols-2 gap-x-5">
           <div>
             <div className="mb-[11px] flex items-center justify-between">
               <p className="text-xl font-medium text-black">Active Workshop</p>
@@ -289,8 +290,8 @@ const MentorAdminPanel = () => {
             </div>
 
             <div className="flex flex-col gap-y-8">
-                
-              <div className="mb-4 flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
+
+              <div className="flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
                 <Image src={MentorWorkshop} alt="Mentor Workshop" />
 
                 <div className="flex w-full justify-between">
@@ -331,7 +332,7 @@ const MentorAdminPanel = () => {
                 </div>
               </div>
 
-              <div className="mb-4 flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
+              <div className="flex gap-4 bg-[#FFFFFF] p-2 font-prosto">
                 <Image src={MentorWorkshop} alt="Mentor Workshop" />
 
                 <div className="flex w-full justify-between">
@@ -371,122 +372,93 @@ const MentorAdminPanel = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
           <div>
             <div className="mb-[11px] flex items-center justify-between">
-              <p className="text-xl font-medium text-black">
-                Recommended for you
-              </p>
+              <p className="text-xl font-medium text-black">Booking List</p>
               <p className="text-[15px] font-normal text-[#777777]">View all</p>
             </div>
 
             <div className="flex flex-col gap-y-8">
-              <div className="flex items-center justify-between rounded-sm bg-white px-3 py-2">
-                <div>
-                  <div className="mb-[18px]">
-                    <p className="mb-[2px] text-xs font-normal text-[#777777]">
-                      assignment help
-                    </p>
-                    <p className="text-base font-medium text-black">
-                      #CSCIT 445, Computer Vision , Assignment 1{" "}
-                    </p>
-                  </div>
 
-                  <div className="flex items-center justify-between text-center">
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                  </div>
+              <div className="rounded-sm bg-white px-[22px] pb-3 pt-2">
+                <div className="mb-1 flex justify-between">
+                  <p className="text-luckyGrey text-[15px]">Exam Preparation</p>
+                  <p className="text-base font-medium text-black">$50</p>
                 </div>
+                <p className="mb-1 text-xl font-medium text-black">
+                  B H M Riaz Uddin
+                </p>
+                <div className="flex items-center">
+                  <CiCalendar className="mr-[10px] text-lg text-silver" />
+                  <p className="text-luckyGrey text-xs font-medium">
+                    Monday, 15th 2014
+                  </p>
+                </div>
+                <p className="text-luckyGrey ml-7 mt-[2px] text-xs font-medium">
+                  12.30 PM
+                </p>
 
-                <div className="">
-                  <Image
-                    src={image6}
-                    alt="image 6"
-                    className="mx-auto mb-[18px] h-12 w-12"
-                  />
-                  <button className="flex items-center justify-center rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white">
-                    <CiPaperplane className="mr-3 text-xl" />
-                    Chat
-                  </button>
+                <div className="mt-1 flex items-center justify-between">
+                  <div className="flex items-center justify-center gap-x-2">
+                    <Image src={graduatedCap} alt="Graduated cap" />
+                    <p className="text-luckyGrey text-xs font-medium">
+                      University Of Wollongong
+                    </p>
+                  </div>
+
+                  <div className="flex gap-x-3">
+                    <button className="rounded-sm bg-[#EC221F] px-6 py-1 text-xs font-medium text-white duration-300 hover:opacity-80">
+                      Cancel
+                    </button>
+                    <button className="text-luckyGrey rounded-sm bg-[#FFD271] px-6 py-1 text-xs font-medium duration-300 hover:opacity-80">
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-center justify-between rounded-sm bg-white px-3 py-2">
-                <div>
-                  <div className="mb-[18px]">
-                    <p className="mb-[2px] text-xs font-normal text-[#777777]">
-                      assignment help
-                    </p>
-                    <p className="text-base font-medium text-black">
-                      #CSCIT 445, Computer Vision , Assignment 1{" "}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center justify-between text-center">
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-normal text-[#777777]">
-                        Expired on
-                      </p>
-                      <p className="text-[15px] font-medium text-black">
-                        07 Oct 2023
-                      </p>
-                    </div>
-                  </div>
+              <div className="rounded-sm bg-white px-[22px] pb-3 pt-2">
+                <div className="mb-1 flex justify-between">
+                  <p className="text-luckyGrey text-[15px]">Exam Preparation</p>
+                  <p className="text-base font-medium text-black">$50</p>
                 </div>
+                <p className="mb-1 text-xl font-medium text-black">
+                  B H M Riaz Uddin
+                </p>
+                <div className="flex items-center">
+                  <CiCalendar className="mr-[10px] text-lg text-silver" />
+                  <p className="text-luckyGrey text-xs font-medium">
+                    Monday, 15th 2014
+                  </p>
+                </div>
+                <p className="text-luckyGrey ml-7 mt-[2px] text-xs font-medium">
+                  12.30 PM
+                </p>
 
-                <div className="">
-                  <Image
-                    src={image6}
-                    alt="image 6"
-                    className="mx-auto mb-[18px] h-12 w-12"
-                  />
-                  <button className="flex items-center justify-center rounded-sm bg-blue px-6 py-1 text-xs font-medium text-white">
-                    <CiPaperplane className="mr-3 text-xl" />
-                    Chat
-                  </button>
+                <div className="mt-1 flex items-center justify-between">
+                  <div className="flex items-center justify-center gap-x-2">
+                    <Image src={graduatedCap} alt="Graduated cap" />
+                    <p className="text-luckyGrey text-xs font-medium">
+                      University Of Wollongong
+                    </p>
+                  </div>
+
+                  <div className="flex gap-x-3">
+                    <button className="rounded-sm bg-[#EC221F] px-6 py-1 text-xs font-medium text-white duration-300 hover:opacity-80">
+                      Cancel
+                    </button>
+                    <button className="text-luckyGrey rounded-sm bg-[#FFD271] px-6 py-1 text-xs font-medium duration-300 hover:opacity-80">
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               </div>
+
+            
+
             </div>
           </div>
         </div>
