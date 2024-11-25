@@ -1,6 +1,7 @@
-import React from "react";
-import { FaFilter, FaSearch } from "react-icons/fa";
-import { IoSearchOutline } from "react-icons/io5";import { FiFilter } from "react-icons/fi";
+"use client";
+
+import dynamic from "next/dynamic";
+import { IoSearchOutline } from "react-icons/io5";
 import { LuFilter } from "react-icons/lu";
 
 const AllTasks = () => {
@@ -17,7 +18,7 @@ const AllTasks = () => {
         </div>
 
         <div className="mt-[26px] flex w-full items-center gap-6 lg:w-[60%]">
-          <div className="flex w-full items-center rounded-md border border-silver px-6 text-base text-silver">
+          <div className="flex w-full items-center rounded-md border-[1px]  border-silver px-6 text-base text-silver">
             <input
               type="text"
               placeholder="Search by keywords, mentor, location, university..."
@@ -35,7 +36,7 @@ const AllTasks = () => {
       </div>
 
       <div className="py-16">
-        <p className="text-xs text-[#777777] mb-6 ml-2">1-50 results of 200</p>
+        <p className="mb-6 ml-2 text-xs text-[#777777]">1-50 results of 200</p>
 
         <div className="grid grid-cols-1 gap-x-[29px] gap-y-[37px] md:grid-cols-2">
           <div className="rounded-xl bg-white pb-[5px] pl-10 pr-8 pt-2 shadow-[0px_5px_15px_2px_#00000026]">
@@ -552,5 +553,5 @@ const AllTasks = () => {
     </div>
   );
 };
-
-export default AllTasks;
+export default AllTasks
+// export default dynamic(() => Promise.resolve(AllTasks), { ssr: false });
